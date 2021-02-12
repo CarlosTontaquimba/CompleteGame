@@ -21,12 +21,17 @@ public class PlayerMovee : MonoBehaviour
     //******************
     //Recuperamos el rigidbody
     Rigidbody2D rb2d;
-
+    //***
+    //Sprite renderer 
+    public SpriteRenderer spriteRenderer;
+    //******
+    public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
         //Hacemos referecnia al rigidbody del personaje 
         rb2d = GetComponent<Rigidbody2D>();
+        //Giramos nuestro player 
     }
 
     // Update is called once per frame
@@ -37,14 +42,23 @@ public class PlayerMovee : MonoBehaviour
         {
             //El Vector2 pide como parametros el eje x e y
             rb2d.velocity = new Vector2(runSpeed, rb2d.velocity.y); //Corre a la derecha
+            //El player gira a la derecha
+            spriteRenderer.flipX = false;
+            //Activamos la animacion caminar cuando se pulse una tecla izq, derech
+            animator.SetBool("Run", true);
         }
         else if (Input.GetKey("a") || Input.GetKey("left"))
         {
             rb2d.velocity = new Vector2(-runSpeed, rb2d.velocity.y); //Corre a la izquierda con run speed en negativo
+            //El player gira a la derecha
+            spriteRenderer.flipX = true;
+            //Activamos la animacion caminar cuando se pulse una tecla izq, derech
+            animator.SetBool("Run", true);
         }
         else
         {
             rb2d.velocity = new Vector2(0, rb2d.velocity.y);
+            animator.SetBool("Run", false);
         }
         //FIN MOVIMIENTO
         //SALTAR
@@ -53,6 +67,18 @@ public class PlayerMovee : MonoBehaviour
             rb2d.velocity = new Vector2(rb2d.velocity.x, jumpSpeed);
         }
         //FIN SALTO
+        if (CheckGround.isGrounded == false) //Cuando no esta en el suelo
+        {
+            Debug.Log("Asi esta el check ground: " + CheckGround.isGrounded);
+            //Esta saltando
+            animator.SetBool("Jump", true);
+            animator.SetBool("Run", false);
+        }
+        
+        if (CheckGround.isGrounded == true)//En el momento que esté en el suelo 
+        {
+            animator.SetBool("Jump", false); //Jump sera falso
+        }
         //COntrol salto 
       /*  if (betterJump)
         {
