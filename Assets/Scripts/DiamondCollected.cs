@@ -11,6 +11,11 @@ public class DiamondCollected : MonoBehaviour
         {
             //Desactivar Sprite Renderer
             GetComponent<SpriteRenderer>().enabled = false;
-        }
+            //Llamamo al metodo de la clase DiamondManager
+            FindObjectOfType<DiamondManager>().AllDiamondsCollected();  
+            //Destruimos objeto
+            Destroy(gameObject, 0.05f);
+
+        }   
     }
 }
