@@ -69,7 +69,7 @@ public class PlayerMovee : MonoBehaviour
         //FIN SALTO
         if (CheckGround.isGrounded == false) //Cuando no esta en el suelo
         {
-            Debug.Log("Asi esta el check ground: " + CheckGround.isGrounded);
+           // Debug.Log("Asi esta el check ground: " + CheckGround.isGrounded);
             //Esta saltando
             animator.SetBool("Jump", true);
             animator.SetBool("Run", false);
