@@ -9,8 +9,10 @@ public class DamageObject : MonoBehaviour
         if (collision.transform.CompareTag("Player")) //Si ha coleccionado el player 
         {
             Debug.Log("Player damaged");
-            //Cuandpo entremos en se tpo de cosas destruimos el player
+            //Destruimos el objeto
             Destroy(collision.gameObject);
+            //LLamamos el metodo de la clase PlayerRaspawn
+            collision.transform.GetComponent<PlayerRespawn>().PlayerDamaged();
         }
     }
 }
