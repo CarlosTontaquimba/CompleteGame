@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class DiamondManager : MonoBehaviour
 {
+    public GameObject transition;
     private void Update()
     {
         AllDiamondsCollected();
@@ -16,8 +17,13 @@ public class DiamondManager : MonoBehaviour
         if(transform.childCount == 0)
         {
             Debug.Log("Diamantes recolectados, nivel superado");
-            //Cuando ya no haya frutas
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // Se debe añadir las escenas en File-> Build Settings
+            transition.SetActive(true);//Activamos la transicion haciendo referencia al game Object
+            //Cuando ya no haya frutas cambiamops de escena
+            Invoke("ChangeScene", 1); // Cambia de escena en 1 segundo
         }
+    }
+    void ChangeScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // Se debe añadir las escenas en File-> Build Settings
     }
 }

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 public class PlayerRespawn : MonoBehaviour
 {
     private float checkPointPositionX, checkPointPositionY;
@@ -15,6 +14,7 @@ public class PlayerRespawn : MonoBehaviour
             transform.position = new Vector2(PlayerPrefs.GetFloat("checkPointPositionX"), PlayerPrefs.GetFloat("checkPointPositionY"));
         }
     }
+    //Sirve para reinciar el juego donde quedò, por que guarda ifnrmacion del juego
     public void ReachedCheckPoint(float x, float y) //Metodo para detectar si se pasa por el checkpoint
     {
         //Guarda la posicion del check point
@@ -25,8 +25,16 @@ public class PlayerRespawn : MonoBehaviour
     public void PlayerDamaged()
     {
         //Este codigo activa la animacion del PlayerDie
-        //animator.Play("PlayerDie");
+        UpdateState("PlayerDie");
         //Una vez muerto reseteamos el nivel 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name); //Reiniciamos  al escena actual
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name); //Reiniciamos  al escena actual 
+    }
+    //Metodo para activar animaciones del animator
+    public void UpdateState(string state = null)
+    {
+        if (state != null)
+        {
+            animator.Play(state);
+        }
     }
 }

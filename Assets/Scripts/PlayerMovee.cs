@@ -61,35 +61,58 @@ public class PlayerMovee : MonoBehaviour
             animator.SetBool("Run", false);
         }
         //FIN MOVIMIENTO
+        
+        //COntrol salto 
+        /*  if (betterJump)
+          {
+              if (rb2d.velocity.y < 0)
+              {
+                  rb2d.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier) * Time.deltaTime; // El up significa que en x=0, e Y = 1 
+              }
+              if (rb2d.velocity.y > 0 && !(Input.GetKeyDown("up")))
+              {
+                  rb2d.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier) * Time.deltaTime; // El up significa que en x=0, e Y = 1 
+              }
+          }*/
+        //Hacer doble salto 
+    }
+    public float doubleJumpSpeed = 2.5f;
+    public bool canDoubleJump;
+    private void Update()
+    {
         //SALTAR
-        if (Input.GetKeyDown("up") && CheckGround.isGrounded) // Si se presiona las teclas y esta en el suelo --> salte
+        if (Input.GetKeyDown("up") && CheckGround.isGrounded) // En el momento que presionamos up y este en el suelo
         {
-            rb2d.velocity = new Vector2(rb2d.velocity.x, jumpSpeed);
+            //if (CheckGround.isGrounded) // Y estemos en el suelo
+            //{
+               // canDoubleJump = true;
+                rb2d.velocity = new Vector2(rb2d.velocity.x, jumpSpeed); // Entonces salte
+            //}
+            //else
+            //{
+               // if (Input.GetKeyDown("up")) //
+                //{
+                    //if (canDoubleJump)
+                    //{
+                        //rb2d.velocity = new Vector2(rb2d.velocity.x, doubleJumpSpeed);
+                        //canDoubleJump = false;
+                   // }
+              //  }
+            //}
         }
         //FIN SALTO
         if (CheckGround.isGrounded == false) //Cuando no esta en el suelo
         {
-           // Debug.Log("Asi esta el check ground: " + CheckGround.isGrounded);
+            // Debug.Log("Asi esta el check ground: " + CheckGround.isGrounded);
             //Esta saltando
             animator.SetBool("Jump", true);
             animator.SetBool("Run", false);
         }
-        
+
         if (CheckGround.isGrounded == true)//En el momento que esté en el suelo 
         {
             animator.SetBool("Jump", false); //Jump sera falso
         }
-        //COntrol salto 
-      /*  if (betterJump)
-        {
-            if (rb2d.velocity.y < 0)
-            {
-                rb2d.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier) * Time.deltaTime; // El up significa que en x=0, e Y = 1 
-            }
-            if (rb2d.velocity.y > 0 && !(Input.GetKeyDown("up")))
-            {
-                rb2d.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier) * Time.deltaTime; // El up significa que en x=0, e Y = 1 
-            }
-        }*/
     }
+
 }
