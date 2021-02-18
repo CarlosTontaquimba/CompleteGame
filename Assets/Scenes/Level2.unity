@@ -318,7 +318,7 @@ PrefabInstance:
     - target: {fileID: 7143690674653286111, guid: 8f936f2668e8e0d4ca97fb550e3a310f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.4534729
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7143690674653286111, guid: 8f936f2668e8e0d4ca97fb550e3a310f,
         type: 3}
@@ -382,7 +382,7 @@ PrefabInstance:
     - target: {fileID: 644106053818821690, guid: ef12ba4cf5f0ace40b8331efd1915d9f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.2073789
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 644106053818821690, guid: ef12ba4cf5f0ace40b8331efd1915d9f,
         type: 3}
@@ -1134,7 +1134,7 @@ GameObject:
   - component: {fileID: 486009238}
   m_Layer: 5
   m_Name: Platform
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1634,6 +1634,8 @@ MonoBehaviour:
   jumpSpeed: 4.5
   spriteRenderer: {fileID: 965992004}
   animator: {fileID: 965992003}
+  doubleJumpSpeed: 2.5
+  canDoubleJump: 0
 --- !u!50 &965992001
 Rigidbody2D:
   serializedVersion: 4

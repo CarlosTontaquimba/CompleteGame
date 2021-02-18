@@ -9,12 +9,18 @@ public class CheckGround : MonoBehaviour
     // Start is called before the first frame update
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        isGrounded = true;
-        Debug.Log("Check ground = "+ isGrounded);
+        if (collision.CompareTag("Ground"))
+        {
+            isGrounded = true;
+            Debug.Log("Check ground = " + isGrounded);
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        isGrounded = false;
-        Debug.Log(isGrounded);
+        if (collision.CompareTag("Ground"))
+        {
+            isGrounded = false;
+            Debug.Log("Check ground = " + isGrounded);
+        }
     }
 }

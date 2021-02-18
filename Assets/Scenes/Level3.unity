@@ -490,6 +490,8 @@ MonoBehaviour:
   jumpSpeed: 4.5
   spriteRenderer: {fileID: 177683813}
   animator: {fileID: 177683812}
+  doubleJumpSpeed: 2.5
+  canDoubleJump: 0
 --- !u!50 &177683810
 Rigidbody2D:
   serializedVersion: 4
@@ -1842,7 +1844,7 @@ PrefabInstance:
     - target: {fileID: 644106053818821690, guid: ef12ba4cf5f0ace40b8331efd1915d9f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.2073789
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 644106053818821690, guid: ef12ba4cf5f0ace40b8331efd1915d9f,
         type: 3}
@@ -4135,6 +4137,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7143690674653286110, guid: 8f936f2668e8e0d4ca97fb550e3a310f,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7143690674653286111, guid: 8f936f2668e8e0d4ca97fb550e3a310f,
         type: 3}
       propertyPath: m_RootOrder
@@ -4153,7 +4160,7 @@ PrefabInstance:
     - target: {fileID: 7143690674653286111, guid: 8f936f2668e8e0d4ca97fb550e3a310f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.4534729
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7143690674653286111, guid: 8f936f2668e8e0d4ca97fb550e3a310f,
         type: 3}
@@ -4680,7 +4687,7 @@ GameObject:
   - component: {fileID: 1615311875}
   m_Layer: 5
   m_Name: Platform
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
