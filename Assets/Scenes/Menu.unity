@@ -233,6 +233,7 @@ RectTransform:
   - {fileID: 1155999084}
   - {fileID: 1951553766}
   - {fileID: 1005851007}
+  - {fileID: 1403347077}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1444,8 +1445,9 @@ GameObject:
   - component: {fileID: 1385937897}
   - component: {fileID: 1385937898}
   - component: {fileID: 1385937899}
+  - component: {fileID: 1385937900}
   m_Layer: 0
-  m_Name: DrLevel3
+  m_Name: DrLevel4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1463,7 +1465,7 @@ Transform:
   m_LocalScale: {x: 0.6913476, y: 0.6913476, z: 0.6913476}
   m_Children: []
   m_Father: {fileID: 1655385395}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1385937898
 SpriteRenderer:
@@ -1526,7 +1528,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.7013889}
@@ -1542,6 +1544,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8611111, y: 1.4027778}
   m_EdgeRadius: 0
+--- !u!114 &1385937900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385937896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 276092f6ea84c7941bc673bdb98875b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 1403347079}
+  levelName: Level4
+  inDoor: 0
 --- !u!1 &1389127059
 GameObject:
   m_ObjectHideFlags: 0
@@ -1553,8 +1570,9 @@ GameObject:
   - component: {fileID: 1389127060}
   - component: {fileID: 1389127061}
   - component: {fileID: 1389127062}
+  - component: {fileID: 1389127063}
   m_Layer: 0
-  m_Name: DrLevel4
+  m_Name: DrLevel3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1572,7 +1590,7 @@ Transform:
   m_LocalScale: {x: 0.6913476, y: 0.6913476, z: 0.6913476}
   m_Children: []
   m_Father: {fileID: 1655385395}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1389127061
 SpriteRenderer:
@@ -1635,7 +1653,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.7013889}
@@ -1651,6 +1669,119 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8611111, y: 1.4027778}
   m_EdgeRadius: 0
+--- !u!114 &1389127063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389127059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 276092f6ea84c7941bc673bdb98875b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 1403347079}
+  levelName: Level3
+  inDoor: 0
+--- !u!1 &1403347076
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1403347077}
+  - component: {fileID: 1403347080}
+  - component: {fileID: 1403347079}
+  - component: {fileID: 1403347078}
+  m_Layer: 5
+  m_Name: PresButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1403347077
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403347076}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 37162742}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -232.04, y: 135}
+  m_SizeDelta: {x: 427.66724, y: 92.38536}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1403347078
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403347076}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4c105d40e8a2dde458be7e3c48ceb50d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1403347079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403347076}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 1, b: 0.1387968, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 8a2b9e2a607dd2143b58c44bc32410b4, type: 3}
+    m_FontSize: 35
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 134
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: TOQUE LA PANTALLA PARA INGRESAR
+--- !u!222 &1403347080
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403347076}
+  m_CullTransparentMesh: 0
 --- !u!1 &1414402543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1861,8 +1992,8 @@ Transform:
   m_Children:
   - {fileID: 1858116698}
   - {fileID: 1660005861}
-  - {fileID: 1385937897}
   - {fileID: 1389127060}
+  - {fileID: 1385937897}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1877,6 +2008,7 @@ GameObject:
   - component: {fileID: 1660005861}
   - component: {fileID: 1660005862}
   - component: {fileID: 1660005863}
+  - component: {fileID: 1660005864}
   m_Layer: 0
   m_Name: DrLevel2
   m_TagString: Untagged
@@ -1959,7 +2091,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.7013889}
@@ -1975,6 +2107,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8611111, y: 1.4027778}
   m_EdgeRadius: 0
+--- !u!114 &1660005864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660005860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 276092f6ea84c7941bc673bdb98875b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 1403347079}
+  levelName: Level2
+  inDoor: 0
 --- !u!1 &1808989903
 GameObject:
   m_ObjectHideFlags: 0
@@ -2030,6 +2177,7 @@ GameObject:
   - component: {fileID: 1858116698}
   - component: {fileID: 1858116699}
   - component: {fileID: 1858116700}
+  - component: {fileID: 1858116701}
   m_Layer: 0
   m_Name: DrLevel1
   m_TagString: Untagged
@@ -2112,7 +2260,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.7013889}
@@ -2128,6 +2276,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8611111, y: 1.4027778}
   m_EdgeRadius: 0
+--- !u!114 &1858116701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858116697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 276092f6ea84c7941bc673bdb98875b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 1403347079}
+  levelName: Level1
+  inDoor: 0
 --- !u!1 &1870829201
 GameObject:
   m_ObjectHideFlags: 0
