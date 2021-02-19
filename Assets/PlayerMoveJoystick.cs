@@ -9,7 +9,6 @@ public class PlayerMoveJoystick : MonoBehaviour
     public float runSpeedHorizontal = 2;
     public float runSpeed = 1.25f;
     public float jumpSpeed = 4.5f;
-    private bool canDoubleJump;
     Rigidbody2D rb2d;
     public SpriteRenderer spriteRenderer;
     public Animator animator;
