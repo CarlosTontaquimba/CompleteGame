@@ -30,6 +30,8 @@ public class UIManager : MonoBehaviour
     //Poder ir al menu principal
     public void GoToMainMenu()
     {
+        //Activamos el tiempo
+        Time.timeScale = 1;
         SceneManager.LoadScene("Menu");
     }
     //Salir del juego 
