@@ -83,22 +83,7 @@ public class PlayerMovee : MonoBehaviour
         //SALTAR
         if (Input.GetKeyDown("up") && CheckGround.isGrounded) // En el momento que presionamos up y este en el suelo
         {
-            //if (CheckGround.isGrounded) // Y estemos en el suelo
-            //{
-               // canDoubleJump = true;
                 rb2d.velocity = new Vector2(rb2d.velocity.x, jumpSpeed); // Entonces salte
-            //}
-            //else
-            //{
-               // if (Input.GetKeyDown("up")) //
-                //{
-                    //if (canDoubleJump)
-                    //{
-                        //rb2d.velocity = new Vector2(rb2d.velocity.x, doubleJumpSpeed);
-                        //canDoubleJump = false;
-                   // }
-              //  }
-            //}
         }
         //FIN SALTO
         if (CheckGround.isGrounded == false) //Cuando no esta en el suelo

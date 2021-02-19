@@ -31,9 +31,9 @@ public class OpenDoor : MonoBehaviour
     }
     private void Update()
     {
-        if (inDoor  && Input.GetMouseButtonDown(0)) //Si hacemos clic en la pantalla
+       if (inDoor  && Input.GetMouseButtonDown(0)) //Si hacemos clic en la pantalla
         {
             SceneManager.LoadScene(levelName);
-        }   
+        }
     }
 }
