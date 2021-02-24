@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ControlRelacionAspecto : MonoBehaviour
 {
+	//ESTE SCRIPT CONTROLA LA RELACION DE ASPECTO PARA QUE EL JUEGO SE ADAPTE A CUALQUIER TIPO DE PANTALLAS
+
 	public float _wantedAspectRatio = 1.3333333f;
 	static float wantedAspectRatio;
 	static Camera cam;

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class JumpDamage : MonoBehaviour
 {
+    //ESTE ESCRIPT AYUDA PARA SABER SI SE SALTA ENCIMA DEL ENEMIGO SOMBRERO Y MATARLO
     //Para saber si estamos colisionando 
     private void OnTriggerEnter2D(Collider2D collision)
     {

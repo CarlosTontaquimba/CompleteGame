@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 //ESTE SCRIPT GESTIONA TODOS LOS CONTROLES PARA EL MENU DE OPCIONES 
 public class UIManager : MonoBehaviour
 {
+    public AudioSource clip;
     //Referencia al panel de mennu
     public GameObject optionsPanel;
     public void OptionsPanel()
@@ -13,6 +15,7 @@ public class UIManager : MonoBehaviour
         Time.timeScale = 0;
         //Activamos el panel 
         optionsPanel.SetActive(true);
+
     }
     public void Return()
     {
@@ -39,5 +42,10 @@ public class UIManager : MonoBehaviour
     {
         //Esto funcionarà unicmente cuando se saca el apk del juego
         Application.Quit();
+    }
+    //Metodod para iniciar sonido cuando aplasto en el icono de opciones
+    public void PlaySound()
+    {
+        clip.Play();
     }
 }

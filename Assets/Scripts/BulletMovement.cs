@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BulletMovement : MonoBehaviour
 {
+    //ESTE CSRIPT CONTROLA LOS MOVIMIENOTS DEL ENEMIGO DE UN LADO A OTR
     public GameObject startPoint, endPoint;
     public float enemySpeed;//Velocidad de movimiento
     public bool isGoingRigth; //Si el jugador se esta moviendohacia la derecha o izquierda
