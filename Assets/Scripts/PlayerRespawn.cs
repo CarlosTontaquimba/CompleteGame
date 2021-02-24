@@ -2,13 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 public class PlayerRespawn : MonoBehaviour
 {
     //ESTE SCRIPT REINICIA EL JUEGO EN UN PUNTO DONDE SE ALMACENO 
     private float checkPointPositionX, checkPointPositionY;
     public Animator animator;
+    //
+  
     private void Start()
     {
+        
         if (PlayerPrefs.GetFloat("checkPointPositionX")!=0)
         {
             //Enviamos el personaje a esa posision

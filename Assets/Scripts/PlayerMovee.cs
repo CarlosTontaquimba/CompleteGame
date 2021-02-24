@@ -1,9 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class PlayerMovee : MonoBehaviour
 {
+    private AudioSource audioSource;
+    //Sonido de saltar
+    public AudioClip jumpClip;
     //Para controlar fuerza de salto
     //public bool betterJump = false;
     //*************
@@ -12,7 +16,7 @@ public class PlayerMovee : MonoBehaviour
     //public float fallMultiplier = 0.5f;
     //*************
     //Para controlar fuerza de salto bajjo
-   // public float lowJumpMultiplier = 1f;
+    // public float lowJumpMultiplier = 1f;
     // Velocidad de correr
     public float runSpeed = 2f;
     //*******
@@ -31,7 +35,8 @@ public class PlayerMovee : MonoBehaviour
     {
         //Hacemos referecnia al rigidbody del personaje 
         rb2d = GetComponent<Rigidbody2D>();
-        //Giramos nuestro player 
+        //Recuperamos el componente 
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -83,7 +88,9 @@ public class PlayerMovee : MonoBehaviour
         //SALTAR
         if (Input.GetKeyDown("up") && CheckGround.isGrounded) // En el momento que presionamos up y este en el suelo
         {
-                rb2d.velocity = new Vector2(rb2d.velocity.x, jumpSpeed); // Entonces salte
+            rb2d.velocity = new Vector2(rb2d.velocity.x, jumpSpeed); // Entonces salte
+            audioSource.clip = jumpClip;
+            audioSource.Play();
         }
         //FIN SALTO
         if (CheckGround.isGrounded == false) //Cuando no esta en el suelo
