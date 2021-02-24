@@ -5,8 +5,9 @@ using UnityEngine.UI;
 
 public class ParallaxController : MonoBehaviour
 {
+    public MeshRenderer meshRenderer;
     public float parallaxSpeed = 0.05f;
-    public RawImage background, platform;
+    //public RawImage background, platform;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,12 +17,14 @@ public class ParallaxController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Parallax();
+        //Parallax();
+        meshRenderer.material.mainTextureOffset = new Vector2(Time.time * parallaxSpeed, 0);
+        
     }
-    public void Parallax()
+    /*public void Parallax()
     {
-        float finalSpeed = parallaxSpeed * Time.deltaTime;
-        background.uvRect = new Rect(background.uvRect.x + finalSpeed, 0f, 1f, 1f);
-        platform.uvRect = new Rect(platform.uvRect.x + finalSpeed * 2, 0f, 1f, 1f);
-    }
+        //float finalSpeed = parallaxSpeed * Time.deltaTime;
+        //background.uvRect = new Rect(background.uvRect.x + finalSpeed, 0f, 1f, 1f);
+        //platform.uvRect = new Rect(platform.uvRect.x + finalSpeed * 2, 0f, 1f, 1f);
+    }*/
 }
