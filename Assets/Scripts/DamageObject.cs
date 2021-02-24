@@ -6,6 +6,7 @@ using UnityEngine.Audio;
 public class DamageObject : MonoBehaviour
 {
     public AudioSource audioSource;
+
     void Start()
     {
         audioSource = GetComponent<AudioSource>();

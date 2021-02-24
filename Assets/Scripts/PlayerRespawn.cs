@@ -42,4 +42,11 @@ public class PlayerRespawn : MonoBehaviour
             animator.Play(state);
         }
     }
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.transform.CompareTag("Destroyer"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }

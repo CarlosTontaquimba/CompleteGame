@@ -24,5 +24,10 @@ public class EnemyController : MonoBehaviour
             audioSource.Play();
             collision.transform.GetComponent<PlayerRespawn>().PlayerDamaged();
         }
+        else if (collision.transform.CompareTag("Destroyer"))
+        {
+            Destroy(gameObject);
+            Debug.Log("Enemigo detruido");
+        }
     }
 }
