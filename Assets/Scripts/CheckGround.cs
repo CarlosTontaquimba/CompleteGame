@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CheckGround : MonoBehaviour
 {
+    //
+  
     // Para detectar si esta tocando el suelo
     public static bool isGrounded; // Con el estatic puedo usar esta variable dentro de otro script
     // Start is called before the first frame update

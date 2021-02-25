@@ -106,5 +106,4 @@ public class PlayerMovee : MonoBehaviour
             animator.SetBool("Jump", false); //Jump sera falso
         }
     }
-
 }
