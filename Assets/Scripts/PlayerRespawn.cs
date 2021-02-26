@@ -23,8 +23,8 @@ public class PlayerRespawn : MonoBehaviour
     public void ReachedCheckPoint(float x, float y) //Metodo para detectar si se pasa por el checkpoint
     {
         //Guarda la posicion del check point
-        PlayerPrefs.SetFloat("checkPointPositionX", 28.52f  );//Guarda la informacion de la x
-        PlayerPrefs.SetFloat("checkPointPositionY", -0.11f);//Guarda la informacion de la y
+        PlayerPrefs.SetFloat("checkPointPositionX", 21.27f);//Guarda la informacion de la x
+        PlayerPrefs.SetFloat("checkPointPositionY", -0.1f);//Guarda la informacion de la y
     }
     //Es el metodo que se llama desde los enemigos para activar la animacion de muerto
     public void PlayerDamaged()
