@@ -9,6 +9,7 @@ TagManager:
   - Destroyer
   - MovilPlatform
   - CreateEnemyActivator
+  - EnemyGenerator
   layers:
   - Default
   - TransparentFX
