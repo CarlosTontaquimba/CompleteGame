@@ -10,6 +10,7 @@ TagManager:
   - MovilPlatform
   - CreateEnemyActivator
   - EnemyGenerator
+  - Platform
   layers:
   - Default
   - TransparentFX

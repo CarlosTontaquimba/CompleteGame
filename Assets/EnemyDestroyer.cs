@@ -18,7 +18,7 @@ public class EnemyDestroyer : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.transform.CompareTag("Enemy") || collision.transform.CompareTag("CreateEnemyActivator"))
+        if (collision.transform.CompareTag("Enemy") || collision.transform.CompareTag("CreateEnemyActivator") || collision.transform.CompareTag("Platform"))
         {
             Destroy(collision.gameObject); 
         }
