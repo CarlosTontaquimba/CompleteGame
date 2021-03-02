@@ -5,6 +5,7 @@ using UnityEngine.Audio;
 
 public class DamageObject : MonoBehaviour
 {
+    public Transform player, respawnPoint;
     public AudioSource audioSource;
 
     void Start()
@@ -19,6 +20,7 @@ public class DamageObject : MonoBehaviour
             //Destruimos el objeto
             //Destroy(collision.gameObject);
             //LLamamos el metodo de la clase PlayerRaspawn
+            player.transform.position = respawnPoint.transform.position;
             collision.transform.GetComponent<PlayerRespawn>().PlayerDamaged();
             audioSource.Play();
 

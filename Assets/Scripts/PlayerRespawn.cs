@@ -35,7 +35,9 @@ public class PlayerRespawn : MonoBehaviour
         /*
         //Este codigo activa la animacion del PlayerDie
         UpdateState("PlayerDie"); */
+        CheckLife();
         vidasSlider.value -= danioEnemy;
+
         //Una vez muerto reseteamos el nivel 
        // SceneManager.LoadScene(SceneManager.GetActiveScene().name); //Reiniciamos  al escena actual 
     }
@@ -55,5 +57,12 @@ public class PlayerRespawn : MonoBehaviour
         }
     }
     //Chequeamos las vidas
+    void CheckLife()
+    {
+        if (vidasSlider.value <= 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name); //Reiniciamos  al escena actual
+        }
+    }
     
 }
