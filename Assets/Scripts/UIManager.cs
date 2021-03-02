@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
+using UnityEngine.UI;
 //ESTE SCRIPT GESTIONA TODOS LOS CONTROLES PARA EL MENU DE OPCIONES 
 public class UIManager : MonoBehaviour
 {
@@ -47,5 +48,13 @@ public class UIManager : MonoBehaviour
     public void PlaySound()
     {
         clip.Play();
+    }
+    public void GameOver()
+    {
+        //Paramos el tiempo en unity 
+        Time.timeScale = 0;
+        //Activamos el panel 
+        optionsPanel.SetActive(true);
+
     }
 }

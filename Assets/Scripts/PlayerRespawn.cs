@@ -61,7 +61,8 @@ public class PlayerRespawn : MonoBehaviour
     {
         if (vidasSlider.value <= 0)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name); //Reiniciamos  al escena actual
+            Time.timeScale = 0;
+            SceneManager.LoadScene("GameOver"); //Reiniciamos  al escena actual
         }
     }
     
