@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class PlayerRespawn : MonoBehaviour
@@ -9,13 +10,12 @@ public class PlayerRespawn : MonoBehaviour
     private float checkPointPositionX, checkPointPositionY;
     public Animator animator;
     //Vidas
-    public GameObject[] hearts;
-    private int lifes;
+    public Slider vidasSlider;
+    public float danioEnemy;
     //*
   
     private void Start()
     {
-        lifes = hearts.Length;
         if (PlayerPrefs.GetFloat("checkPointPositionX")!=0)
         {
             //Enviamos el personaje a esa posision
@@ -35,8 +35,7 @@ public class PlayerRespawn : MonoBehaviour
         /*
         //Este codigo activa la animacion del PlayerDie
         UpdateState("PlayerDie"); */
-        CheckLifes();
-        lifes--;
+        vidasSlider.value -= danioEnemy;
         //Una vez muerto reseteamos el nivel 
        // SceneManager.LoadScene(SceneManager.GetActiveScene().name); //Reiniciamos  al escena actual 
     }
@@ -56,26 +55,5 @@ public class PlayerRespawn : MonoBehaviour
         }
     }
     //Chequeamos las vidas
-    public void CheckLifes()
-    {
-        Debug.Log("Las vidas que tienes son : " + lifes);
-        if (lifes == 1)
-        {
-            //Destruimos el ultimo corazon que nos queda
-            Destroy(hearts[0].gameObject);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name); //Reiniciamos  al escena actual
-        }
-        else if (lifes == 2 )
-        {
-            //Destruimos el ultimo corazon que nos queda
-            Destroy(hearts[1].gameObject);
-            
-        }
-        else if (lifes == 3)
-        {
-            //Destruimos el ultimo corazon que nos queda
-            Destroy(hearts[2].gameObject);
-            
-        }
-    }
+    
 }
