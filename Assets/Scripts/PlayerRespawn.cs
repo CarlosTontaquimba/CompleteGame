@@ -8,11 +8,14 @@ public class PlayerRespawn : MonoBehaviour
     //ESTE SCRIPT REINICIA EL JUEGO EN UN PUNTO DONDE SE ALMACENO 
     private float checkPointPositionX, checkPointPositionY;
     public Animator animator;
-    //
+    //Vidas
+    public GameObject[] hearts;
+    private int lifes;
+    //*
   
     private void Start()
     {
-        
+        lifes = hearts.Length;
         if (PlayerPrefs.GetFloat("checkPointPositionX")!=0)
         {
             //Enviamos el personaje a esa posision
@@ -29,10 +32,13 @@ public class PlayerRespawn : MonoBehaviour
     //Es el metodo que se llama desde los enemigos para activar la animacion de muerto
     public void PlayerDamaged()
     {
+        /*
         //Este codigo activa la animacion del PlayerDie
-        UpdateState("PlayerDie");
+        UpdateState("PlayerDie"); */
+        CheckLifes();
+        lifes--;
         //Una vez muerto reseteamos el nivel 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name); //Reiniciamos  al escena actual 
+       // SceneManager.LoadScene(SceneManager.GetActiveScene().name); //Reiniciamos  al escena actual 
     }
     //Metodo para activar animaciones del animator
     public void UpdateState(string state = null)
@@ -47,6 +53,29 @@ public class PlayerRespawn : MonoBehaviour
         if (collision.transform.CompareTag("Destroyer"))
         {
             Destroy(gameObject);
+        }
+    }
+    //Chequeamos las vidas
+    public void CheckLifes()
+    {
+        Debug.Log("Las vidas que tienes son : " + lifes);
+        if (lifes == 1)
+        {
+            //Destruimos el ultimo corazon que nos queda
+            Destroy(hearts[0].gameObject);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name); //Reiniciamos  al escena actual
+        }
+        else if (lifes == 2 )
+        {
+            //Destruimos el ultimo corazon que nos queda
+            Destroy(hearts[1].gameObject);
+            
+        }
+        else if (lifes == 3)
+        {
+            //Destruimos el ultimo corazon que nos queda
+            Destroy(hearts[2].gameObject);
+            
         }
     }
 }
