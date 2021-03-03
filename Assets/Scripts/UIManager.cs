@@ -44,6 +44,12 @@ public class UIManager : MonoBehaviour
         //Esto funcionarà unicmente cuando se saca el apk del juego
         Application.Quit();
     }
+    public void Restart()
+    {
+        //Activamos el tiempo
+        Time.timeScale = 1;
+        SceneManager.LoadScene("Level1");
+    }
     //Metodod para iniciar sonido cuando aplasto en el icono de opciones
     public void PlaySound()
     {

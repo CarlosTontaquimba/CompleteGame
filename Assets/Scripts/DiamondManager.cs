@@ -9,7 +9,8 @@ public class DiamondManager : MonoBehaviour
 {
     public Text totalDiamonds; //Para saber todas los diamantes que hay en el nivel
     public Text diamondsCollected; //Para saber los diamantes que emos cogido
-    private int totalDiamondsInLevel; 
+    private int totalDiamondsInLevel;
+    public static int totalDiamondsCollected;
     public GameObject transition;
     private void Start()
     {
@@ -22,6 +23,7 @@ public class DiamondManager : MonoBehaviour
         totalDiamonds.text = totalDiamondsInLevel.ToString();
         //Para contar los diamantes que vamos recolectando
         diamondsCollected.text = transform.childCount.ToString();
+        totalDiamondsCollected = transform.childCount; // Se almacena el numero de puntos recogidos
     }
     //Este metodo detecta si el diamante es recogido 
     public void AllDiamondsCollected()

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Audio;
 public class DiamondCollected : MonoBehaviour
 {
+    //ESTE SCRIPT ES CUANDO EL JUGADOR RECOGE UN DIAMANTE Y EL DIAMANTE DESAPARECE
     public AudioSource audioSource;
     //OnTriggerEnter2D detecta cuando algo entra en contacor con el boxcollider2d
     private void OnTriggerEnter2D(Collider2D collision)
