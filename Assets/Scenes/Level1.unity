@@ -1916,7 +1916,7 @@ PrefabInstance:
     - target: {fileID: 3471997373024907748, guid: a986b1f81239f79428a1b09555826993,
         type: 3}
       propertyPath: danioEnemy
-      value: 0.9
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 3471997373024907748, guid: a986b1f81239f79428a1b09555826993,
         type: 3}
