@@ -8,18 +8,27 @@ public class PopUp : MonoBehaviour
     public Canvas canvas;
     public GameObject player;
     public bool a = false;
+    private void Update()
+    {
+        popUp();
+    }
     public void popUp()
     {
-        if (a == false)
+        if (Input.GetMouseButtonDown(0))
         {
-            a = true;
-            canvas.enabled = true;
-        }
-        else if (a == true)
-        {
-            a = false;
-            canvas.enabled = false;
-            player.SetActive(true);
+            if (a == false)
+            {
+                a = true;
+                canvas.enabled = true;
+                Debug.Log("Button pressed");
+            }
+            else if (a == true)
+            {
+                a = false;
+                canvas.enabled = false;
+                player.SetActive(true);
+                Debug.Log("Button pressed");
+            }
         }
     }
 }
