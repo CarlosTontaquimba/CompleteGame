@@ -7,15 +7,21 @@ using UnityEngine.SceneManagement;
 public class PlayerRespawn : MonoBehaviour
 {
     //ESTE SCRIPT REINICIA EL JUEGO EN UN PUNTO DONDE SE ALMACENO 
+    //VIDAS
+    public GameObject[] hearts;
+    private int life;
+
+    //***
     private float checkPointPositionX, checkPointPositionY;
     public Animator animator;
     //Vidas
-    public Slider vidasSlider;
-    public float danioEnemy;
+    //VIDASSLIDERpublic Slider vidasSlider;
+    //public float danioEnemy;
     //*
   
     private void Start()
     {
+        life = hearts.Length;
         if (PlayerPrefs.GetFloat("checkPointPositionX")!=0)
         {
             //Enviamos el personaje a esa posision
@@ -32,11 +38,12 @@ public class PlayerRespawn : MonoBehaviour
     //Es el metodo que se llama desde los enemigos para activar la animacion de muerto
     public void PlayerDamaged()
     {
+        life--;
         /*
         //Este codigo activa la animacion del PlayerDie
         UpdateState("PlayerDie"); */
         CheckLife();
-        vidasSlider.value -= danioEnemy;
+        //VIDASSLIDERvidasSlider.value -= danioEnemy;
 
         //Una vez muerto reseteamos el nivel 
        // SceneManager.LoadScene(SceneManager.GetActiveScene().name); //Reiniciamos  al escena actual 
@@ -59,11 +66,29 @@ public class PlayerRespawn : MonoBehaviour
     //Chequeamos las vidas
     void CheckLife()
     {
-        if (vidasSlider.value <= 0)
+        if (life < 1) // Estamos muertos 
+        {
+            //Reiniciamos nivel
+            Destroy(hearts[0].gameObject);
+            SceneManager.LoadScene("GameOver"); //Reiniciamos  al escena actual
+        }
+        else if (life < 2)
+        {
+            //Destruimos los dos corazones de la derecha
+            Destroy(hearts[1].gameObject);
+            //UpdateState("PlayerDie");
+        }
+        else if (life < 3)
+        {
+            //Destruimos el primer corazon de la derecha
+            Destroy(hearts[2].gameObject);
+            //UpdateState("PlayerDie");
+        }
+        /*VIDASSLIDER if (vidasSlider.value <= 0)
         {
             Time.timeScale = 0;
             SceneManager.LoadScene("GameOver"); //Reiniciamos  al escena actual
-        }
+        }*/
     }
     
 }
