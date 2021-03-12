@@ -11,6 +11,8 @@ TagManager:
   - CreateEnemyActivator
   - EnemyGenerator
   - Platform
+  - DetectCollisionFlags
+  - Flag
   layers:
   - Default
   - TransparentFX

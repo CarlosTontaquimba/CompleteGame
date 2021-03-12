@@ -6,13 +6,25 @@ using UnityEngine.UI;
 public class popUP : MonoBehaviour
 {
     public Canvas canvas;
-    public bool a = false;
-   
+    public bool a = false,detectCollision = false;
+
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.transform.tag == "Player")
+        if (collision.transform.tag == "Flag")
         {
-            PopUp();
+            if (!detectCollision)
+            {
+                Debug.Log("Detectar collision con bandera antes " + detectCollision);
+                PopUp();
+                detectCollision = true;
+                Debug.Log("Detectar collision con bandera despues" + detectCollision);
+            }
+        }
+        if (collision.transform.tag == "DetectCollisionFlags")
+        {
+            detectCollision = false;
+            Debug.Log("¡Cambio detect collisoin ?? "+detectCollision);
         }
     }
     public void PopUp()
@@ -21,6 +33,7 @@ public class popUP : MonoBehaviour
         {
             a = true;
             canvas.enabled = true;
+            a = true;
         }
     }
     public void Return()
