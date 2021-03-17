@@ -10,7 +10,6 @@ public class GameController : MonoBehaviour
 
     public Text questionDisplayText;
     public Text scoreDisplayText;
-    public Text timeRemainingDisplayText;
     public SimpleObjectPool answerButtonObjectPool;
     public Transform answerButtonParent;
     public GameObject questionDisplay;
@@ -33,7 +32,6 @@ public class GameController : MonoBehaviour
         currentRoundData = dataController.GetCurrentRoundData();
         questionPool = currentRoundData.questions;
         timeRemaining = currentRoundData.TimeLimitInSeconds;
-        UpdateTimeRemainingDisplay();
 
         playerScore = 0;
         questionIndex = 0;
@@ -102,10 +100,6 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene("MenuScreen");
     }
 
-    private void UpdateTimeRemainingDisplay()
-    {
-        timeRemainingDisplayText.text = "Time: " + Mathf.Round(timeRemaining).ToString();
-    }
 
     // Update is called once per frame
     void Update()
@@ -113,7 +107,6 @@ public class GameController : MonoBehaviour
         if (isRoundActive)
         {
             timeRemaining -= Time.deltaTime;
-            UpdateTimeRemainingDisplay();
 
             if (timeRemaining <= 0f)
             {

@@ -10,7 +10,7 @@ public class DataController : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
-	
+		
 	}
 
     public RoundData GetCurrentRoundData()

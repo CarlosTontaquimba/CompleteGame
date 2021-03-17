@@ -10,6 +10,7 @@ public class AnswerButton : MonoBehaviour {
     private AnswerData answerData;
 
     private GameController gameController;
+    public Canvas canvas;
 
 	// Use this for initialization
 	void Start ()
@@ -27,5 +28,6 @@ public class AnswerButton : MonoBehaviour {
 	public void HandleClick()
     {
         gameController.AnswerButtonClicked(answerData.isCorrect);
+        canvas.enabled = false;
     }
 }
