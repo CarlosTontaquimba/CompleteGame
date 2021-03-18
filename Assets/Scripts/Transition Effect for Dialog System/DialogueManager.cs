@@ -37,6 +37,20 @@ public class DialogueManager : MonoBehaviour
         activeSentence = sentences.Dequeue();//Dequeue saca la oracion de el listado y la pasa a la variable active sentences
         displayText.text = activeSentence;
         //Debug.Log(activeSentence);
+
+        StopAllCoroutines();
+        StartCoroutine(TypeTheSentence(activeSentence));
+    }
+
+    IEnumerator TypeTheSentence(string sentence)
+    {
+        displayText.text = ""; //Elimino cuaquier texto
+        foreach (char letter  in sentence.ToCharArray())
+        {
+            displayText.text += letter;
+            //myAudio.PlayoneShot(speakAudio); //Sonido de letra
+            yield return new WaitForSeconds(typingSpeen); //Para que aparezcan lentamente 
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -49,10 +63,14 @@ public class DialogueManager : MonoBehaviour
     {
         if (collision.transform.CompareTag("Player"))
         {
-            if (Input.GetKeyDown(KeyCode.H))
+            if (Input.GetKeyDown(KeyCode.H) && displayText.text == activeSentence)
             {
                 DisplayNextSentence();
             }
         }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        StopAllCoroutines();
     }
 }
