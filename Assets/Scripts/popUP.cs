@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class popUP : MonoBehaviour
 {
     public Canvas canvas;
+    public GameObject panel;
+
     public bool a = false,detectCollision = false;
 
 
@@ -26,6 +28,14 @@ public class popUP : MonoBehaviour
             detectCollision = false;
             Debug.Log("¡Cambio detect collisoin ?? "+detectCollision);
         }
+        if (collision.transform.tag == "InfoCheck")
+        {
+            panel.GetComponent<ActiveObjectTransition>().Activar();
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        panel.GetComponent<ActiveObjectTransition>().Desactivar();
     }
     public void PopUp()
     {

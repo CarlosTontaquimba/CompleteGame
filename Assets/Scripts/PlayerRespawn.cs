@@ -49,13 +49,7 @@ public class PlayerRespawn : MonoBehaviour
        // SceneManager.LoadScene(SceneManager.GetActiveScene().name); //Reiniciamos  al escena actual 
     }
     //Metodo para activar animaciones del animator
-    public void UpdateState(string state = null)
-    {
-        if (state != null)
-        {
-            animator.Play(state);
-        }
-    }
+    
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.transform.CompareTag("Destroyer"))
@@ -90,5 +84,12 @@ public class PlayerRespawn : MonoBehaviour
             SceneManager.LoadScene("GameOver"); //Reiniciamos  al escena actual
         }*/
     }
-    
+    public void UpdateState(string state = null)
+    {
+        if (state != null)
+        {
+            animator.Play(state);
+        }
+    }
+
 }
