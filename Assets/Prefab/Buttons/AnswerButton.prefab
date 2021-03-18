@@ -144,7 +144,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answertext: {fileID: 114007419268896624}
-  canvas: {fileID: 3934049723084813715, guid: ece9326ef6e577f4b98431273612fbea, type: 3}
 --- !u!1 &1798971081421980
 GameObject:
   m_ObjectHideFlags: 0
