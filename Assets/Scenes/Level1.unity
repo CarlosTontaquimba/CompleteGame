@@ -4893,7 +4893,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Juego Terminado !
+  m_Text: "\xA1 Nivel completado !"
 --- !u!222 &490565907
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -34243,7 +34243,7 @@ PrefabInstance:
     - target: {fileID: 2818914133155042397, guid: 778eba7e1c9a348479e839416b92f5e8,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2818914133155042397, guid: 778eba7e1c9a348479e839416b92f5e8,
         type: 3}
@@ -34298,7 +34298,7 @@ PrefabInstance:
     - target: {fileID: 2818914133570294217, guid: 778eba7e1c9a348479e839416b92f5e8,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2818914133570294217, guid: 778eba7e1c9a348479e839416b92f5e8,
         type: 3}
@@ -34353,7 +34353,7 @@ PrefabInstance:
     - target: {fileID: 2818914133669056655, guid: 778eba7e1c9a348479e839416b92f5e8,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2818914133669056655, guid: 778eba7e1c9a348479e839416b92f5e8,
         type: 3}
@@ -34408,7 +34408,7 @@ PrefabInstance:
     - target: {fileID: 2818914134422055350, guid: 778eba7e1c9a348479e839416b92f5e8,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2818914134422055350, guid: 778eba7e1c9a348479e839416b92f5e8,
         type: 3}
@@ -34463,7 +34463,7 @@ PrefabInstance:
     - target: {fileID: 2818914135158801034, guid: 778eba7e1c9a348479e839416b92f5e8,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2818914135158801035, guid: 778eba7e1c9a348479e839416b92f5e8,
         type: 3}
@@ -43317,7 +43317,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1789764272}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 59.38, y: -0.69, z: 3.3551004}
+  m_LocalPosition: {x: 59.42, y: -0.74, z: 3.3551004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 778495771}
