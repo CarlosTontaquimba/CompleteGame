@@ -59,7 +59,8 @@ public class DialogueManager : MonoBehaviour
             StartDialogue();
         }
     }
-    private void OnTriggerStay2D(Collider2D collision)
+    //Este mètodo sirve para mostrar el siguiente mensaje en el sistema de diàlogo presionando una tecla en este caso H
+    /*private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.transform.CompareTag("Player"))
         {
@@ -68,9 +69,13 @@ public class DialogueManager : MonoBehaviour
                 DisplayNextSentence();
             }
         }
-    }
+    }*/
     private void OnTriggerExit2D(Collider2D collision)
     {
         StopAllCoroutines();
+    }
+    public void ButtonPressed()
+    {
+        DisplayNextSentence();
     }
 }
