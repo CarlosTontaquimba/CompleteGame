@@ -38,6 +38,13 @@ public class UIManager : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene("Menu");
     }
+    //Ir al nivel2
+    public void GoToLevel2()
+    {
+        //Activamos el tiempo
+        Time.timeScale = 1;
+        SceneManager.LoadScene("Level2");
+    }
     //Salir del juego 
     public void QuitGame()
     {
