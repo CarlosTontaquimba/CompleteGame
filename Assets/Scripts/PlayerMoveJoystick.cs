@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerMoveJoystick : MonoBehaviour
 {
+    private AudioSource audioSource;
+    public AudioClip jumpClip;
     private float horizontalMove = 0f;
     public Joystick joystick;
     public float runSpeedHorizontal = 2;
@@ -14,6 +16,7 @@ public class PlayerMoveJoystick : MonoBehaviour
     public Animator animator;
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         rb2d = GetComponent<Rigidbody2D>();
     }
     private void Update()
@@ -54,6 +57,9 @@ public class PlayerMoveJoystick : MonoBehaviour
         if (CheckGround.isGrounded) //Cuando este en el suelo
         {
             rb2d.velocity = new Vector2(rb2d.velocity.x, jumpSpeed); // Entonces salte
+            audioSource.clip = jumpClip;
+            audioSource.Play();
+
         }
         //FIN SALTO
     }
