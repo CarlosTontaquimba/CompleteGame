@@ -63,6 +63,7 @@ public class PlayerRespawn : MonoBehaviour
         if (life < 1) // Estamos muertos 
         {
             //Reiniciamos nivel
+            
             Destroy(hearts[0].gameObject);
             SceneManager.LoadScene("GameOver"); //Reiniciamos  al escena actual
         }

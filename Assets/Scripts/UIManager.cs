@@ -70,4 +70,10 @@ public class UIManager : MonoBehaviour
         optionsPanel.SetActive(true);
 
     }
+    public void RestartLevel2()
+    {
+        //Activamos el tiempo
+        Time.timeScale = 1;
+        SceneManager.LoadScene("Level2");
+    }
 }
