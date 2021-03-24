@@ -3264,7 +3264,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3471997373024907748, guid: a986b1f81239f79428a1b09555826993, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a986b1f81239f79428a1b09555826993, type: 3}
 --- !u!1001 &289406796
 PrefabInstance:
@@ -4563,6 +4564,23 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 285044378}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &407573557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407573554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 742212972503e534998413a43f23454e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hearts:
+  - {fileID: 2029097394}
+  - {fileID: 1822479675}
+  - {fileID: 429751432}
+  animator: {fileID: 1676828423}
 --- !u!1 &409480212
 GameObject:
   m_ObjectHideFlags: 0
@@ -19146,8 +19164,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1351239519}
   - component: {fileID: 1351239518}
-  - component: {fileID: 1351239517}
   - component: {fileID: 1351239520}
+  - component: {fileID: 1351239517}
   m_Layer: 0
   m_Name: FloorKiller
   m_TagString: Untagged
@@ -19164,7 +19182,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1351239516}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91f383d2c034e94488cde3c20783d7be, type: 3}
+  m_Script: {fileID: 11500000, guid: f7771f60fc2967b4183106387ba6521f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 445194654}

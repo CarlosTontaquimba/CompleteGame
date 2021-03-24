@@ -4,8 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 using UnityEngine.UI;
-//ESTE SCRIPT GESTIONA TODOS LOS CONTROLES PARA EL MENU DE OPCIONES 
-public class UIManager : MonoBehaviour
+
+public class UIManagerL2 : MonoBehaviour
 {
     public AudioSource clip;
     //Referencia al panel de mennu
@@ -55,7 +55,7 @@ public class UIManager : MonoBehaviour
     {
         //Activamos el tiempo
         Time.timeScale = 1;
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("Level2");
     }
     //Metodod para iniciar sonido cuando aplasto en el icono de opciones
     public void PlaySound()
