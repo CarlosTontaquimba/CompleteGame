@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-public class BulletMovement : MonoBehaviour
+
+public class BulletAndFlipMovement : MonoBehaviour
 {
-    //ESTE CSRIPT CONTROLA LOS MOVIMIENOTS DEL ENEMIGO DE UN LADO A OTRo
+
+    //ESTE CSRIPT CONTROLA LOS MOVIMIENOTS DEL ENEMIGO DE UN LADO A OTRO
+    public SpriteRenderer spriteRenderer;
     public GameObject startPoint, endPoint;
     public float enemySpeed;//Velocidad de movimiento
     public bool isGoingRigth; //Si el jugador se esta moviendohacia la derecha o izquierda
@@ -32,6 +34,7 @@ public class BulletMovement : MonoBehaviour
             if (transform.position == endPoint.transform.position)
             {
                 isGoingRigth = true;
+                spriteRenderer.flipX = true;
             }
         }
         if (isGoingRigth)
@@ -40,6 +43,7 @@ public class BulletMovement : MonoBehaviour
             if (transform.position == startPoint.transform.position)
             {
                 isGoingRigth = false;
+                spriteRenderer.flipX = false;
             }
         }
     }
