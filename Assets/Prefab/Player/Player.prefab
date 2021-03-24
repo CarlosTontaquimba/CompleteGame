@@ -34,7 +34,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4435863962455728925}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.88, y: 1.54, z: 0}
+  m_LocalPosition: {x: -1.429993, y: -1.120003, z: -4.3568287}
   m_LocalScale: {x: 0.4091902, y: 0.4091902, z: 0.4091902}
   m_Children:
   - {fileID: 4435863962522606110}
@@ -278,6 +278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93f99621375c7c841b9ff5bbe0483883, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpClip: {fileID: 0}
   joystick: {fileID: 0}
   runSpeedHorizontal: 2
   runSpeed: 1.25
@@ -296,6 +297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3054e575b25d8c24babe9687bccd28fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hearts: []
   animator: {fileID: 4435863962455728919}
 --- !u!82 &445194655
 AudioSource:
