@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyGenerator : MonoBehaviour
 {
     public GameObject enemyPrefab;
-    public float generatorTimer = 7f; //Cada cuanto se genera un enemigo
+    public float generatorTimer = 150f; //Cada cuanto se genera un enemigo
 
     private void Start()
     {

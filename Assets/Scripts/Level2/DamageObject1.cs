@@ -23,7 +23,6 @@ public class DamageObject1 : MonoBehaviour
             player.transform.position = respawnPoint.transform.position;
             collision.transform.GetComponent<PlayerRaspawn1>().PlayerDamaged();
             audioSource.Play();
-
         }
     }
 }
