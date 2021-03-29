@@ -55,7 +55,8 @@ public class UIManager : MonoBehaviour
     {
         //Activamos el tiempo
         Time.timeScale = 1;
-        SceneManager.LoadScene("Level1");
+        //SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     //Metodod para iniciar sonido cuando aplasto en el icono de opciones
     public void PlaySound()

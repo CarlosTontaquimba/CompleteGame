@@ -10,7 +10,7 @@ public class PlayerRespawn : MonoBehaviour
     //VIDAS
     public GameObject[] hearts;
     private int life;
-
+    public GameObject GameOver;
     //***
     private float checkPointPositionX, checkPointPositionY;
     public Animator animator;
@@ -65,7 +65,9 @@ public class PlayerRespawn : MonoBehaviour
             //Reiniciamos nivel
             
             Destroy(hearts[0].gameObject);
-            SceneManager.LoadScene("GameOver"); //Reiniciamos  al escena actual
+           // SceneManager.LoadScene("GameOver"); //Reiniciamos  al escena actual
+            GameOver.SetActive(true);
+
         }
         else if (life < 2)
         {
