@@ -65,7 +65,8 @@ public class PlayerRespawn : MonoBehaviour
             //Reiniciamos nivel
             
             Destroy(hearts[0].gameObject);
-           // SceneManager.LoadScene("GameOver"); //Reiniciamos  al escena actual
+            // SceneManager.LoadScene("GameOver"); //Reiniciamos  al escena actual
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             GameOver.SetActive(true);
 
         }
