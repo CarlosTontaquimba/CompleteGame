@@ -9,7 +9,7 @@ public class UIManager : MonoBehaviour
 {
     public AudioSource clip;
     //Referencia al panel de mennu
-    public GameObject optionsPanel;
+    public GameObject optionsPanel, aboutPanel;
     public void OptionsPanel()
     {
         //Paramos el tiempo en unity 
@@ -70,5 +70,20 @@ public class UIManager : MonoBehaviour
         //Activamos el panel 
         optionsPanel.SetActive(true);
 
+    }
+    public void About()
+    {
+        //Paramos el tiempo en unity 
+        Time.timeScale = 0;
+        //Activamos el panel 
+        aboutPanel.SetActive(true);
+
+    }
+    public void ReturnAboutOf()
+    {
+        //Activamos el tiempo en unity
+        Time.timeScale = 1;
+        //Desactivamos el panel de options
+        aboutPanel.SetActive(false);
     }
 }

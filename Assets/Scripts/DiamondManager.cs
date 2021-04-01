@@ -28,7 +28,7 @@ public class DiamondManager : MonoBehaviour
     //Este metodo detecta si el diamante es recogido 
     public void AllDiamondsCollected()
     {
-        if(transform.childCount == 0)
+        if(transform.childCount == 0) // Si todos los diamantes son recolectados, haga algo 
         {
             Debug.Log("Diamantes recolectados, nivel superado");
             transition.SetActive(true);//Activamos la transicion haciendo referencia al game Object
