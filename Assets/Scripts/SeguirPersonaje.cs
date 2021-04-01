@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class SeguirPersonaje : MonoBehaviour
 {
+    public AudioSource audio;
+    public GameObject canGO;
+    public bool canGoAc;
+
+
     public Transform objetivo;
     public float separacion = 0.50f;
     Vector3 desface;
@@ -16,5 +21,9 @@ public class SeguirPersonaje : MonoBehaviour
     private void FixedUpdate()
     {
         transform.position = new Vector3(objetivo.position.x + separacion, transform.position.y, transform.position.z);
+    }
+    private void Update()
+    {
+       
     }
 }
