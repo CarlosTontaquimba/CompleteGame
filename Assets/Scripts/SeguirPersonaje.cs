@@ -17,8 +17,4 @@ public class SeguirPersonaje : MonoBehaviour
     {
         transform.position = new Vector3(objetivo.position.x + separacion, transform.position.y, transform.position.z);
     }
-    private void Update()
-    {
-       
-    }
 }
