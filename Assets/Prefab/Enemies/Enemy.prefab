@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 1086109386057792753}
   - component: {fileID: 1086109386057792752}
   - component: {fileID: 1086109386057792759}
+  - component: {fileID: 8831996250285511191}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -144,3 +145,18 @@ PolygonCollider2D:
       - {x: 0.25, y: -0.1325}
       - {x: 0.25, y: -0.1175}
       - {x: 0.24, y: -0.0975}
+--- !u!114 &8831996250285511191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086109386057792755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91f383d2c034e94488cde3c20783d7be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  respawnPoint: {fileID: 0}
+  audioSource: {fileID: 0}

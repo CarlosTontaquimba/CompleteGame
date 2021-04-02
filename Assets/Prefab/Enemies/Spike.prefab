@@ -117,6 +117,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91f383d2c034e94488cde3c20783d7be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 4435863962455728917, guid: a986b1f81239f79428a1b09555826993, type: 3}
+  respawnPoint: {fileID: 8418632502553416145, guid: 51b7e7246dce38346a60dfd97180c64d,
+    type: 3}
   audioSource: {fileID: -2227034758050025526}
 --- !u!58 &8941963018177519398
 CircleCollider2D:
