@@ -203,7 +203,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startPoint: {fileID: 7345405248120338498}
   endPoint: {fileID: 7345405248440000035}
-  enemySpeed: 1
+  enemySpeed: 1.5
   isGoingRigth: 0
 --- !u!1001 &7345405246862504693
 PrefabInstance:
