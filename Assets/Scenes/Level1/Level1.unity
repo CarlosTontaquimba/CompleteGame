@@ -34933,6 +34933,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.04
       objectReference: {fileID: 0}
+    - target: {fileID: 3745951109764331627, guid: f5146adea1fe0b6419483916ea6e1ef3,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 445194654}
+    - target: {fileID: 3745951109764331627, guid: f5146adea1fe0b6419483916ea6e1ef3,
+        type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 885828704}
     - target: {fileID: 6634022607325677534, guid: f5146adea1fe0b6419483916ea6e1ef3,
         type: 3}
       propertyPath: player
@@ -35859,6 +35869,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3745951109764331627, guid: f5146adea1fe0b6419483916ea6e1ef3,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 445194654}
+    - target: {fileID: 3745951109764331627, guid: f5146adea1fe0b6419483916ea6e1ef3,
+        type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 885828704}
     - target: {fileID: 6634022607325677534, guid: f5146adea1fe0b6419483916ea6e1ef3,
         type: 3}
       propertyPath: player
@@ -36738,6 +36758,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3745951109764331627, guid: f5146adea1fe0b6419483916ea6e1ef3,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 445194654}
+    - target: {fileID: 3745951109764331627, guid: f5146adea1fe0b6419483916ea6e1ef3,
+        type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 885828704}
     - target: {fileID: 6634022607325677534, guid: f5146adea1fe0b6419483916ea6e1ef3,
         type: 3}
       propertyPath: player
@@ -45682,6 +45712,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3745951109764331627, guid: f5146adea1fe0b6419483916ea6e1ef3,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 445194654}
+    - target: {fileID: 3745951109764331627, guid: f5146adea1fe0b6419483916ea6e1ef3,
+        type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 885828704}
     - target: {fileID: 6634022607325677534, guid: f5146adea1fe0b6419483916ea6e1ef3,
         type: 3}
       propertyPath: player
