@@ -17,10 +17,7 @@ public class popUP : MonoBehaviour
         {
             if (!detectCollision)
             {
-                Debug.Log("Detectar collision con bandera antes " + detectCollision);
-                PopUp();
-                detectCollision = true;
-                Debug.Log("Detectar collision con bandera despues" + detectCollision);
+                canvas.enabled = true;
             }
         }
         if (collision.transform.tag == "DetectCollisionFlags")
