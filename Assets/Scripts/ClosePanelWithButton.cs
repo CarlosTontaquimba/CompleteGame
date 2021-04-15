@@ -10,9 +10,14 @@ public class ClosePanelWithButton : MonoBehaviour
 
     public bool a = false, detectCollision = false;
 
-    public void CloseCanvas()
+    public void CloseCanvas1()
     {
         SceneManager.LoadScene("Level1");
+        canvas.enabled = false;
+    }
+    public void CloseCanvas2()
+    {
+        SceneManager.LoadScene("Level2");
         canvas.enabled = false;
     }
 
