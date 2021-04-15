@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DesactivateCanvas : MonoBehaviour
 {
-    public Canvas canvas;
+    public GameObject canvas ;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +20,7 @@ public class DesactivateCanvas : MonoBehaviour
     {
         if (collision.transform.CompareTag("Player"))
         {
-            canvas.enabled = true;
+            canvas.SetActive(false);
         }
     }
 }
