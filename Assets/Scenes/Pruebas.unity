@@ -2205,12 +2205,6 @@ MonoBehaviour:
         isCorrect: 1
       - answerText: Pedro
         isCorrect: 0
-    - QuestionText: Donde vives
-      answers:
-      - answerText: Otavalo
-        isCorrect: 1
-      - answerText: Ibarra
-        isCorrect: 0
 --- !u!1001 &218316623
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19736,7 +19730,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1789764272}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 59.694, y: -0.466, z: 3.3551004}
+  m_LocalPosition: {x: -7.5, y: 0.75, z: 3.3551004}
   m_LocalScale: {x: 1.8551844, y: 1.8551844, z: 1.8551844}
   m_Children: []
   m_Father: {fileID: 778495771}
