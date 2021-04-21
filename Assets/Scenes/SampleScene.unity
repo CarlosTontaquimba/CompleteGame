@@ -229,7 +229,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 0.99}
+    oldSize: {x: 0.5, y: 0.495}
     newSize: {x: 1, y: 0.99}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -351,6 +351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3aecf2df5810c24092f3b4452d07fb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dieClip: {fileID: 0}
 --- !u!1 &502278231
 GameObject:
   m_ObjectHideFlags: 0
@@ -1324,6 +1325,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac35daa8959af4c49871eee689b3cfc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  totalDiamonds: {fileID: 0}
+  diamondsCollected: {fileID: 0}
+  transition: {fileID: 0}
 --- !u!4 &615710424
 Transform:
   m_ObjectHideFlags: 0
@@ -1459,9 +1463,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a691399db4942d54dae8e5c8f659a031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  meshRenderer: {fileID: 0}
   parallaxSpeed: 0.05
-  background: {fileID: 379857103}
-  platform: {fileID: 1695626097}
 --- !u!1 &873938205
 GameObject:
   m_ObjectHideFlags: 0
@@ -1743,10 +1746,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9f2e702da615a04a8a34288797d86ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpClip: {fileID: 0}
   runSpeed: 2
   jumpSpeed: 4.5
   spriteRenderer: {fileID: 1616833915}
   animator: {fileID: 1616833914}
+  doubleJumpSpeed: 2.5
+  canDoubleJump: 0
 --- !u!58 &1616833920
 CircleCollider2D:
   m_ObjectHideFlags: 0

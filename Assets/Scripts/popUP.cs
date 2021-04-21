@@ -18,6 +18,7 @@ public class popUP : MonoBehaviour
             if (!detectCollision)
             {
                 canvas.enabled = true;
+                Debug.Log("Golpeo bandera");
             }
         }
         if (collision.transform.tag == "DetectCollisionFlags")
