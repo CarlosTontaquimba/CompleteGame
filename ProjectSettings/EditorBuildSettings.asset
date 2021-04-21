@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level2/Level2.unity
     guid: 2233daaf6ef7d1e47afd477d396fb201
+  - enabled: 1
+    path: Assets/Scenes/Level1/QuizLevel1/MenuScreen.unity
+    guid: 035377067d8e4b8449471ca521dfc53e
+  - enabled: 1
+    path: Assets/Scenes/Level1/QuizLevel1/Game.unity
+    guid: a4e61e2465269f942bd92b5cc72c69e7
   m_configObjects: {}
