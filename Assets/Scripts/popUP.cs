@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class popUP : MonoBehaviour
 {
@@ -15,11 +16,7 @@ public class popUP : MonoBehaviour
     {
         if (collision.transform.tag == "Flag")
         {
-            if (!detectCollision)
-            {
-                canvas.enabled = true;
-                Debug.Log("Golpeo bandera");
-            }
+            SceneManager.LoadScene("MenuScreen");
         }
         if (collision.transform.tag == "DetectCollisionFlags")
         {

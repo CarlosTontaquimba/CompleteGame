@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class DesactivateCanvas : MonoBehaviour
+public class SceneControl : MonoBehaviour
 {
-    public GameObject canvas ;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,11 +16,11 @@ public class DesactivateCanvas : MonoBehaviour
     {
         
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void MainMenu()
     {
-        if (collision.transform.CompareTag("Player"))
-        {
-            canvas.SetActive(false);
-        }
+        //Activamos el tiempo
+        Time.timeScale = 1;
+        //SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("Menu");
     }
 }
