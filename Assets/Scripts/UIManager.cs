@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
     public AudioSource clip;
     //Referencia al panel de mennu
     public GameObject optionsPanel, aboutPanel;
+   
     public void OptionsPanel()
     {
         //Paramos el tiempo en unity 
