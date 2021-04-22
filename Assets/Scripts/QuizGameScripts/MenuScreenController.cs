@@ -9,5 +9,8 @@ public class MenuScreenController : MonoBehaviour {
     {
         SceneManager.LoadScene("Game");
     }
-
+    public void StartGame1()
+    {
+        SceneManager.LoadScene("Game1");
+    }
 }

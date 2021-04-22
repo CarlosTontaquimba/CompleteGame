@@ -14,6 +14,7 @@ TagManager:
   - DetectCollisionFlags
   - Flag
   - InfoCheck
+  - Flag1
   layers:
   - Default
   - TransparentFX
