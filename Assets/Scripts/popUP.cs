@@ -41,6 +41,11 @@ public class popUP : MonoBehaviour
             panel[4].GetComponent<ActiveObjectTransition>().Activar();
             panel[5].GetComponent<ActiveObjectTransition>().Activar();
         }
+        if (collision.transform.tag == "InfoCheck3")
+        {
+            panel[6].GetComponent<ActiveObjectTransition>().Activar();
+            panel[7].GetComponent<ActiveObjectTransition>().Activar();
+        }
 
 
     }
@@ -52,5 +57,7 @@ public class popUP : MonoBehaviour
         panel[3].GetComponent<ActiveObjectTransition>().Desactivar();
         panel[4].GetComponent<ActiveObjectTransition>().Desactivar();
         panel[5].GetComponent<ActiveObjectTransition>().Desactivar();
+        panel[6].GetComponent<ActiveObjectTransition>().Desactivar();
+        panel[7].GetComponent<ActiveObjectTransition>().Desactivar();
     }
 }
