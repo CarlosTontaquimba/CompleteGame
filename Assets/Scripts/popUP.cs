@@ -36,37 +36,8 @@ public class popUP : MonoBehaviour
             panel[2].GetComponent<ActiveObjectTransition>().Activar();
             panel[3].GetComponent<ActiveObjectTransition>().Activar();
         }
-        if (collision.transform.tag == "InfoCheck2")
-        {
-            panel[4].GetComponent<ActiveObjectTransition>().Activar();
-            panel[5].GetComponent<ActiveObjectTransition>().Activar();
-            Debug.Log("golpeado");
-        }
-        if (collision.transform.tag == "InfoCheck3")
-        {
-            panel[6].GetComponent<ActiveObjectTransition>().Activar();
-            panel[7].GetComponent<ActiveObjectTransition>().Activar();
-        }
-        if (collision.transform.tag == "InfoCheck4")
-        {
-            panel[8].GetComponent<ActiveObjectTransition>().Activar();
-            panel[9].GetComponent<ActiveObjectTransition>().Activar();
-        }
-        if (collision.transform.tag == "InfoCheck5")
-        {
-            panel[10].GetComponent<ActiveObjectTransition>().Activar();
-            panel[11].GetComponent<ActiveObjectTransition>().Activar();
-        }
-        if (collision.transform.tag == "InfoCheck6")
-        {
-            panel[2].GetComponent<ActiveObjectTransition>().Activar();
-            panel[3].GetComponent<ActiveObjectTransition>().Activar();
-        }
-        if (collision.transform.tag == "InfoCheck7")
-        {
-            panel[2].GetComponent<ActiveObjectTransition>().Activar();
-            panel[3].GetComponent<ActiveObjectTransition>().Activar();
-        }
+
+
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -74,7 +45,5 @@ public class popUP : MonoBehaviour
         panel[1].GetComponent<ActiveObjectTransition>().Desactivar();
         panel[2].GetComponent<ActiveObjectTransition>().Desactivar();
         panel[3].GetComponent<ActiveObjectTransition>().Desactivar();
-        panel[4].GetComponent<ActiveObjectTransition>().Desactivar();
-        panel[5].GetComponent<ActiveObjectTransition>().Desactivar();
     }
 }
