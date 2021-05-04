@@ -44,7 +44,7 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator TypeTheSentence(string sentence)
     {
-        displayText.text = ""; //Elimino cuaquier texto
+        displayText.text = ""; //Elimino cualquier texto
         foreach (char letter  in sentence.ToCharArray())
         {
             displayText.text += letter;
