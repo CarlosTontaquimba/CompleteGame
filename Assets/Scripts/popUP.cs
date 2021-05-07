@@ -17,10 +17,6 @@ public class popUP : MonoBehaviour
         {
             SceneManager.LoadScene("MenuScreen");
         }
-        if (collision.transform.tag == "Flag1")
-        {
-            SceneManager.LoadScene("MenuScreen1");
-        }
         if (collision.transform.tag == "DetectCollisionFlags")
         {
             detectCollision = false;
@@ -46,8 +42,21 @@ public class popUP : MonoBehaviour
             panel[6].GetComponent<ActiveObjectTransition>().Activar();
             panel[7].GetComponent<ActiveObjectTransition>().Activar();
         }
-
-
+        if (collision.transform.tag == "InfoCheck4")
+        {
+            panel[8].GetComponent<ActiveObjectTransition>().Activar();
+            panel[9].GetComponent<ActiveObjectTransition>().Activar();
+        }
+        if (collision.transform.tag == "InfoCheck5")
+        {
+            panel[10].GetComponent<ActiveObjectTransition>().Activar();
+            panel[11].GetComponent<ActiveObjectTransition>().Activar();
+        }
+        if (collision.transform.tag == "InfoCheck6")
+        {
+            panel[12].GetComponent<ActiveObjectTransition>().Activar();
+            panel[13].GetComponent<ActiveObjectTransition>().Activar();
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -59,5 +68,11 @@ public class popUP : MonoBehaviour
         panel[5].GetComponent<ActiveObjectTransition>().Desactivar();
         panel[6].GetComponent<ActiveObjectTransition>().Desactivar();
         panel[7].GetComponent<ActiveObjectTransition>().Desactivar();
+        panel[8].GetComponent<ActiveObjectTransition>().Desactivar();
+        panel[9].GetComponent<ActiveObjectTransition>().Desactivar();
+        panel[10].GetComponent<ActiveObjectTransition>().Desactivar();
+        panel[11].GetComponent<ActiveObjectTransition>().Desactivar();
+        panel[12].GetComponent<ActiveObjectTransition>().Desactivar();
+        panel[13].GetComponent<ActiveObjectTransition>().Desactivar();
     }
 }

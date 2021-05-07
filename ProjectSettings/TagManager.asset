@@ -14,7 +14,6 @@ TagManager:
   - DetectCollisionFlags
   - Flag
   - InfoCheck
-  - Flag1
   - InfoCheck1
   - Infocheck2
   - InfoCheck3
