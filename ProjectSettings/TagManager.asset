@@ -21,6 +21,7 @@ TagManager:
   - InfoCheck5
   - InfoCheck6
   - InfoCheck7
+  - Flag1
   layers:
   - Default
   - TransparentFX
