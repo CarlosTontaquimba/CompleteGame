@@ -7,7 +7,7 @@ public class PlayerMoveJoystick : MonoBehaviour
     private AudioSource audioSource;
     public AudioClip jumpClip;
     private float horizontalMove = 0f;
-    public Joystick joystick;
+    public VariableJoystick joystick;
     public float runSpeedHorizontal = 2;
     public float runSpeed = 1.25f;
     public float jumpSpeed = 4.5f;
