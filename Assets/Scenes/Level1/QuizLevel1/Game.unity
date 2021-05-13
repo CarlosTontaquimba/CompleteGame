@@ -698,8 +698,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.7000122, y: 0}
-  m_SizeDelta: {x: 50.97412, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &899860482
 GameObject:
@@ -1344,7 +1344,8 @@ MonoBehaviour:
     TimeLimitInSeconds: 90
     PointsAddedForCorrectAnswer: 10
     questions:
-    - QuestionText: "J\xD3VENES QUE HAN PASADO SU VIDA ACOMPA\xD1ADOS DE LA TECNOLOG\xCDA"
+    - QuestionText: "Son j\xF3venes que han pasado toda su vida acompa\xF1ados de
+        la tecnolog\xEDa."
       answers:
       - answerText: Ingenieros en sistema
         isCorrect: 0
@@ -1354,18 +1355,18 @@ MonoBehaviour:
         isCorrect: 0
       - answerText: Ingenieros de software
         isCorrect: 0
-    - QuestionText: "\xBFQU\xC9 ES EL CIBERACOSO?"
+    - QuestionText: "\xBFQu\xE9 es el ciberacoso?"
       answers:
       - answerText: "Es la agresi\xF3n se da a trav\xE9s de dispositivos tecnol\xF3gicos
           modernos."
         isCorrect: 1
       - answerText: "Es un tipo de agresi\xF3n f\xEDsica."
         isCorrect: 0
-      - answerText: "Agresi\xF3n que se da a trav\xE9s de redes sociales."
+      - answerText: "Agresi\xF3n que se d\xE1 a trav\xE9s de redes sociales."
         isCorrect: 0
       - answerText: "Es una agresi\xF3n sexual."
         isCorrect: 0
-    - QuestionText: "\xBFCU\xC1LES SON LAS CATEGOR\xCDAS DEL CIBERACOSO?"
+    - QuestionText: "\xBFCu\xE1les son las categor\xEDas del ciberacoso?"
       answers:
       - answerText: "Cartas, Mensajes en redes sociales, Llamadas telef\xF3nicas"
         isCorrect: 0
@@ -1373,29 +1374,30 @@ MonoBehaviour:
         isCorrect: 0
       - answerText: "Fotos, Videos, Chats, Encuentros f\xEDsicos."
         isCorrect: 0
-      - answerText: "Mensaje de texto, Correo electr\xF3nico, Llamada, Foto, Videoclip."
+      - answerText: "Mensaje de texto, Correo electr\xF3nico, Llamada , Foto, Videoclip."
         isCorrect: 1
-    - QuestionText: ACTORES, PARTICIPANTES EN EL CIBERACOSO
+    - QuestionText: Actores, participantes en el ciberacoso
       answers:
       - answerText: "Internet, Tel\xE9fono m\xF3vil, Computador, etc."
         isCorrect: 0
-      - answerText: Facebook, YouTube, Instagram, Snapchat
+      - answerText: Facebook, YouTube, Instagram, SnapChat
         isCorrect: 0
       - answerText: "V\xEDctima, Victimario y Testigos."
         isCorrect: 1
       - answerText: "Llamadas, Mensaje de texto, Correos electr\xF3nicos, Fotos."
         isCorrect: 0
-    - QuestionText: "\xBFCU\xC1LES SON LOS FACTORES IMPLICADOS EN EL CIBERACOSO?"
+    - QuestionText: "\xBFCu\xE1les son los factores implicados en el ciberacoso?"
       answers:
       - answerText: Internet, Tiempo, Lugar, Redes sociales
         isCorrect: 0
-      - answerText: Facebook, YouTube, Instagram, Snapchat
+      - answerText: Facebook, YouTube, Instagram, SnapChat
         isCorrect: 0
-      - answerText: El tiempo, el lugar, las redes sociales
+      - answerText: El tiempo, el lugar, las redes sciales
         isCorrect: 0
       - answerText: Tiempo, Lugar, Perfil del acosador y manifestaciones.
         isCorrect: 1
-    - QuestionText: "\xBFCU\xC1L RASGO NO PERTENECE AL PERFIL DEL CIBERACOSADOR?"
+    - QuestionText: "\xBFCu\xE1l de los siguientes rasgos no portenece al perfil
+        del ciberacosador?"
       answers:
       - answerText: Personalidad dominante
         isCorrect: 0

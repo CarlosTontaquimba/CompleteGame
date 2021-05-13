@@ -994,9 +994,9 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2071977554}
+  - {fileID: 1949035417}
   - {fileID: 1881716009}
   - {fileID: 1252231926}
-  - {fileID: 1949035417}
   m_Father: {fileID: 367873942}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1120,7 +1120,7 @@ MonoBehaviour:
         isCorrect: 0
     - QuestionText: "\xBFCU\xC1LES NO SON LAS PAUTAS DE PREVENCI\xD3N DEL GROOMING?"
       answers:
-      - answerText: "Hacer clic en enlaces de correos electr\xF3nicos"
+      - answerText: "Hacer click en enlaces de correos electr\xF3nicos"
         isCorrect: 1
       - answerText: "Usar un nombre ficticio y una fotograf\xEDa de alg\xFAn personaje
           de ficci\xF3n "
@@ -1183,7 +1183,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 996479067}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1333,7 +1333,7 @@ RectTransform:
   m_Children:
   - {fileID: 2084456560}
   m_Father: {fileID: 996479067}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1539,7 +1539,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 996479067}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.068, y: 0.5}
   m_AnchorMax: {x: 0.94265354, y: 0.7807865}
