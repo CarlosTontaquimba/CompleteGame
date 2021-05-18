@@ -56,7 +56,7 @@ public class popUP : MonoBehaviour
         {
             panel[12].GetComponent<ActiveObjectTransition>().Activar();
             panel[13].GetComponent<ActiveObjectTransition>().Activar();
-        }
+        }   
     }
     private void OnTriggerExit2D(Collider2D collision)
     {

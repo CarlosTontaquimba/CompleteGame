@@ -10,7 +10,7 @@ public class CheckPoint : MonoBehaviour
         {
             //Llamamops el metod de la clase PlayerRespawn
             collision.GetComponent<PlayerRespawn>().ReachedCheckPoint(transform.position.x,transform.position.y);
-
+            Debug.Log("Golpeó chek point");
         }
     }
 }
