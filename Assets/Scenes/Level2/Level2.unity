@@ -30202,8 +30202,18 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 8a7dfc47455905843894ac60a7f1221b, type: 3}
     - target: {fileID: 4435863962455728916, guid: a986b1f81239f79428a1b09555826993,
         type: 3}
+      propertyPath: runSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4435863962455728916, guid: a986b1f81239f79428a1b09555826993,
+        type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4435863962455728916, guid: a986b1f81239f79428a1b09555826993,
+        type: 3}
+      propertyPath: runSpeedHorizontal
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4435863962455728917, guid: a986b1f81239f79428a1b09555826993,
         type: 3}
