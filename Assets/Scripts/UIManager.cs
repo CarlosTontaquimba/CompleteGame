@@ -9,7 +9,7 @@ public class UIManager : MonoBehaviour
 {
     public AudioSource clip;
     //Referencia al panel de mennu
-    public GameObject optionsPanel, aboutPanel;
+    public GameObject optionsPanel, aboutPanel,userManual;
    
     public void OptionsPanel()
     {
@@ -72,13 +72,26 @@ public class UIManager : MonoBehaviour
         optionsPanel.SetActive(true);
 
     }
-    public void About()
+    public void AboutOf()
     {
         //Paramos el tiempo en unity 
         Time.timeScale = 0;
         //Activamos el panel 
         aboutPanel.SetActive(true);
-
+    }
+    public void UserManual()
+    {
+        //Paramos el tiempo en unity 
+        Time.timeScale = 0;
+        //Activamos el panel 
+        userManual.SetActive(true);
+    }
+    public void CloseUserManual()
+    {
+        //Paramos el tiempo en unity 
+        Time.timeScale = 0;
+        //Activamos el panel 
+        userManual.SetActive(false);
     }
     public void ReturnAboutOf()
     {
