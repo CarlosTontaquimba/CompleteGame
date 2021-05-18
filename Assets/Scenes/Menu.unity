@@ -1348,7 +1348,7 @@ PrefabInstance:
     - target: {fileID: 2818914135158801038, guid: 778eba7e1c9a348479e839416b92f5e8,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 778eba7e1c9a348479e839416b92f5e8, type: 3}
@@ -13819,6 +13819,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GameCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7842839393880513668, guid: e8533956dd764a045b10f90d480b578c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7842839393880513671, guid: e8533956dd764a045b10f90d480b578c,
         type: 3}
