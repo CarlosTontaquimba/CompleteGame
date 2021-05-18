@@ -14,7 +14,7 @@ public class DamageObject : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.transform.CompareTag("Player")) //Si ha coleccionado el player 
+        if (collision.transform.CompareTag("Player")) //Si ha colicionado el player 
         {
             Debug.Log("Player damaged");
             collision.transform.GetComponent<PlayerRespawn>().PlayerDamaged();
