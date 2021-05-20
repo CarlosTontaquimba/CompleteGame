@@ -17,6 +17,10 @@ public class popUP : MonoBehaviour
         {
             SceneManager.LoadScene("MenuScreen");
         }
+        if (collision.transform.tag == "Flag1")
+        {
+            SceneManager.LoadScene("MenuScreen1");
+        }
         if (collision.transform.tag == "DetectCollisionFlags")
         {
             detectCollision = false;
