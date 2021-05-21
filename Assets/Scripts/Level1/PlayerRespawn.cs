@@ -28,7 +28,7 @@ public class PlayerRespawn : MonoBehaviour
             transform.position = new Vector2(PlayerPrefs.GetFloat("checkPointPositionX"), PlayerPrefs.GetFloat("checkPointPositionY"));
         }
     }
-    private void Update()
+    /*private void Update()
     {
         if(life == 5)
         {
@@ -40,7 +40,7 @@ public class PlayerRespawn : MonoBehaviour
             Debug.Log("Array de vidas "+hearts.Length);
         }
         
-    }
+    }*/
     //Sirve para reinciar el juego donde quedò, por que guarda ifnrmacion del juego
     public void ReachedCheckPoint(float x, float y) //Metodo para detectar si se pasa por el checkpoint
     {

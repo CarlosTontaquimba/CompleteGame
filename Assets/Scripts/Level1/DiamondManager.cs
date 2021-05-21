@@ -9,9 +9,12 @@ public class DiamondManager : MonoBehaviour
 {
     public Text totalDiamonds; //Para saber todas los diamantes que hay en el nivel
     public Text diamondsCollected; //Para saber los diamantes que emos cogido
+    public Text diamondsCollected1; //Para saber los diamantes que emos cogido en el panel game over
     private int totalDiamondsInLevel;
     public static int totalDiamondsCollected;
-    public GameObject transition;
+    //Esto es para el game over
+    private int collectedDiamondsGamOvr = 0;
+    private int initDiamonds = 52;
     private void Start()
     {
         totalDiamondsInLevel = transform.childCount;
@@ -24,10 +27,11 @@ public class DiamondManager : MonoBehaviour
         //Para contar los diamantes que vamos recolectando
         diamondsCollected.text = transform.childCount.ToString();
         totalDiamondsCollected = transform.childCount; // Se almacena el numero de puntos recogidos
-        if (transform.childCount == 30)
+        ShowCollectedDiamonds();
+        /*if (transform.childCount == 30)
         {
             Debug.Log("Hola llegue a treinta");
-        }
+        }*/
     }
     //Este metodo detecta si el diamante es recogido 
     public void AllDiamondsCollected()
@@ -35,13 +39,15 @@ public class DiamondManager : MonoBehaviour
         if(transform.childCount == 0) // Si todos los diamantes son recolectados, haga algo 
         {
             Debug.Log("Diamantes recolectados, nivel superado");
-            transition.SetActive(true);//Activamos la transicion haciendo referencia al game Object
             //Cuando ya no haya frutas cambiamops de escena
             Invoke("ChangeScene", 1); // Cambia de escena en 1 segundo
         }
     }
-    void ChangeScene()
+    public void ShowCollectedDiamonds()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // Se debe añadir las escenas en File-> Build Settings
+        totalDiamondsCollected = transform.childCount; // Son 52
+        collectedDiamondsGamOvr = initDiamonds - totalDiamondsCollected;
+        //Debug.Log("Mostrando diamnates recolectasdos = " + collectedDiamondsGamOvr);
+        diamondsCollected1.text = collectedDiamondsGamOvr.ToString();
     }
 }
