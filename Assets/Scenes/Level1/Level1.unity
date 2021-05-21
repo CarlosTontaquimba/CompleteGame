@@ -32703,7 +32703,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 0
   m_CollisionDetection: 1
-  m_Constraints: 6
+  m_Constraints: 5
 --- !u!19719996 &509735372
 TilemapCollider2D:
   m_ObjectHideFlags: 0
