@@ -14,7 +14,6 @@ public class DiamondManager : MonoBehaviour
     public static int totalDiamondsCollected;
     //Esto es para el game over
     private int collectedDiamondsGamOvr = 0;
-    private int initDiamonds = 52;
     private void Start()
     {
         totalDiamondsInLevel = transform.childCount;
@@ -46,7 +45,7 @@ public class DiamondManager : MonoBehaviour
     public void ShowCollectedDiamonds()
     {
         totalDiamondsCollected = transform.childCount; // Son 52
-        collectedDiamondsGamOvr = initDiamonds - totalDiamondsCollected;
+        collectedDiamondsGamOvr = totalDiamondsInLevel - totalDiamondsCollected;
         //Debug.Log("Mostrando diamnates recolectasdos = " + collectedDiamondsGamOvr);
         diamondsCollected1.text = collectedDiamondsGamOvr.ToString();
     }
