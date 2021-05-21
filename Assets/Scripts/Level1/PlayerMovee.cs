@@ -64,24 +64,7 @@ public class PlayerMovee : MonoBehaviour
             rb2d.velocity = new Vector2(0, rb2d.velocity.y);
             animator.SetBool("Run", false);
         }
-        //FIN MOVIMIENTO
-        
-        //COntrol salto 
-        /*  if (betterJump)
-          {
-              if (rb2d.velocity.y < 0)
-              {
-                  rb2d.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier) * Time.deltaTime; // El up significa que en x=0, e Y = 1 
-              }
-              if (rb2d.velocity.y > 0 && !(Input.GetKeyDown("up")))
-              {
-                  rb2d.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier) * Time.deltaTime; // El up significa que en x=0, e Y = 1 
-              }
-          }*/
-        //Hacer doble salto 
     }
-    public float doubleJumpSpeed = 2.5f;
-    public bool canDoubleJump;
     private void Update()
     {
         //SALTAR
