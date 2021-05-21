@@ -24,6 +24,10 @@ public class DiamondManager : MonoBehaviour
         //Para contar los diamantes que vamos recolectando
         diamondsCollected.text = transform.childCount.ToString();
         totalDiamondsCollected = transform.childCount; // Se almacena el numero de puntos recogidos
+        if (transform.childCount == 30)
+        {
+            Debug.Log("Hola llegue a treinta");
+        }
     }
     //Este metodo detecta si el diamante es recogido 
     public void AllDiamondsCollected()

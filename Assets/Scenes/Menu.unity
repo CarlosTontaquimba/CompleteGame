@@ -1655,6 +1655,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2818914133570294217, guid: 778eba7e1c9a348479e839416b92f5e8,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2818914133570294217, guid: 778eba7e1c9a348479e839416b92f5e8,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: UserManual
       objectReference: {fileID: 0}
@@ -1761,7 +1766,7 @@ PrefabInstance:
     - target: {fileID: 2818914135158801034, guid: 778eba7e1c9a348479e839416b92f5e8,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2818914135158801034, guid: 778eba7e1c9a348479e839416b92f5e8,
         type: 3}
@@ -1901,7 +1906,7 @@ PrefabInstance:
     - target: {fileID: 2818914135158801038, guid: 778eba7e1c9a348479e839416b92f5e8,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2818914135158801039, guid: 778eba7e1c9a348479e839416b92f5e8,
         type: 3}

@@ -28,6 +28,19 @@ public class PlayerRespawn : MonoBehaviour
             transform.position = new Vector2(PlayerPrefs.GetFloat("checkPointPositionX"), PlayerPrefs.GetFloat("checkPointPositionY"));
         }
     }
+    private void Update()
+    {
+        if(life == 5)
+        {
+            Debug.Log("Tienes vidas completas");
+        }
+        else if (true)
+        {
+            Debug.Log("Tienes" + life + "vidas");
+            Debug.Log("Array de vidas "+hearts.Length);
+        }
+        
+    }
     //Sirve para reinciar el juego donde quedò, por que guarda ifnrmacion del juego
     public void ReachedCheckPoint(float x, float y) //Metodo para detectar si se pasa por el checkpoint
     {
@@ -39,16 +52,8 @@ public class PlayerRespawn : MonoBehaviour
     public void PlayerDamaged()
     {
         life--;
-        /*
-        //Este codigo activa la animacion del PlayerDie
-        UpdateState("PlayerDie"); */
         CheckLife();
-        //VIDASSLIDERvidasSlider.value -= danioEnemy;
-
-        //Una vez muerto reseteamos el nivel 
-       // SceneManager.LoadScene(SceneManager.GetActiveScene().name); //Reiniciamos  al escena actual 
     }
-    //Metodo para activar animaciones del animator
     
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -81,11 +86,18 @@ public class PlayerRespawn : MonoBehaviour
             Destroy(hearts[2].gameObject);
             //UpdateState("PlayerDie");
         }
-        /*VIDASSLIDER if (vidasSlider.value <= 0)
+        else if (life < 4)
         {
-            Time.timeScale = 0;
-            SceneManager.LoadScene("GameOver"); //Reiniciamos  al escena actual
-        }*/
+            //Destruimos el primer corazon de la derecha
+            Destroy(hearts[3].gameObject);
+            //UpdateState("PlayerDie");
+        }
+        else if (life < 5)
+        {
+            //Destruimos el primer corazon de la derecha
+            Destroy(hearts[4].gameObject);
+            //UpdateState("PlayerDie");
+        }
     }
     public void UpdateState(string state = null)
     {
