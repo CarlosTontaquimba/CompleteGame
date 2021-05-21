@@ -3912,7 +3912,6 @@ GameObject:
   - component: {fileID: 251992123}
   - component: {fileID: 251992125}
   - component: {fileID: 251992124}
-  - component: {fileID: 251992126}
   m_Layer: 0
   m_Name: Plataform3
   m_TagString: Ground
@@ -4010,27 +4009,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &251992126
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 251992122}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 6200000, guid: db83b6756bf72af478c4cafc29ef25d1, type: 2}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &260328288 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5865568232874002685, guid: ff04229fd0e2386499a4fc7cac25a940,
@@ -16280,8 +16258,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -17.099976, y: 0}
-  m_SizeDelta: {x: 82.05328, y: 0}
+  m_AnchoredPosition: {x: -17.099976, y: -13}
+  m_SizeDelta: {x: 82.05322, y: 26.044006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1023340140
 MonoBehaviour:
