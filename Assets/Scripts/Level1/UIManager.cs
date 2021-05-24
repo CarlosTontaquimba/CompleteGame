@@ -37,7 +37,13 @@ public class UIManager : MonoBehaviour
     {
         //Activamos el tiempo
         Time.timeScale = 1;
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("MainMenu");
+    }
+    public void SelectLevel()
+    {
+        //Activamos el tiempo
+        Time.timeScale = 1;
+        SceneManager.LoadScene("SelectLevel");
     }
     //Ir al nivel2
     public void GoToLevel2()
@@ -79,6 +85,13 @@ public class UIManager : MonoBehaviour
         Time.timeScale = 0;
         //Activamos el panel 
         aboutPanel.SetActive(true);
+    }
+    public void CloseAboutOf()
+    {
+        //Paramos el tiempo en unity 
+        Time.timeScale = 0;
+        //Activamos el panel 
+        aboutPanel.SetActive(false);
     }
     public void UserManual()
     {
