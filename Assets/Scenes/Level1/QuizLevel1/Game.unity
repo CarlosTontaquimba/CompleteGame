@@ -2707,7 +2707,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allRoundData:
   - name: Level1
-    TimeLimitInSeconds: 20
+    TimeLimitInSeconds: 30
     PointsAddedForCorrectAnswer: 10
     questions:
     - QuestionText: "Son j\xF3venes que han pasado toda su vida acompa\xF1ados de
