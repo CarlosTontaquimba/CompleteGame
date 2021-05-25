@@ -19275,6 +19275,11 @@ PrefabInstance:
       propertyPath: respawnPoint
       value: 
       objectReference: {fileID: 885828704}
+    - target: {fileID: 6502203474498198787, guid: f5146adea1fe0b6419483916ea6e1ef3,
+        type: 3}
+      propertyPath: enemySpeed
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5146adea1fe0b6419483916ea6e1ef3, type: 3}
 --- !u!1 &1254409505 stripped
@@ -25172,6 +25177,11 @@ PrefabInstance:
       propertyPath: respawnPoint
       value: 
       objectReference: {fileID: 885828704}
+    - target: {fileID: 6502203474498198787, guid: f5146adea1fe0b6419483916ea6e1ef3,
+        type: 3}
+      propertyPath: enemySpeed
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5146adea1fe0b6419483916ea6e1ef3, type: 3}
 --- !u!1 &1699263167
