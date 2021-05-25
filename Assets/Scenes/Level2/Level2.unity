@@ -3101,7 +3101,7 @@ PrefabInstance:
     - target: {fileID: 6502203474498198787, guid: f5146adea1fe0b6419483916ea6e1ef3,
         type: 3}
       propertyPath: enemySpeed
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6502203474498198787, guid: f5146adea1fe0b6419483916ea6e1ef3,
         type: 3}
@@ -10751,7 +10751,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &618704955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13193,7 +13193,7 @@ PrefabInstance:
     - target: {fileID: 6502203474498198787, guid: f5146adea1fe0b6419483916ea6e1ef3,
         type: 3}
       propertyPath: enemySpeed
-      value: 5
+      value: 4.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5146adea1fe0b6419483916ea6e1ef3, type: 3}
@@ -14151,7 +14151,7 @@ PrefabInstance:
     - target: {fileID: 6502203474498198787, guid: f5146adea1fe0b6419483916ea6e1ef3,
         type: 3}
       propertyPath: enemySpeed
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5146adea1fe0b6419483916ea6e1ef3, type: 3}
@@ -14365,8 +14365,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -17.099976, y: 0}
-  m_SizeDelta: {x: 82.05328, y: 0}
+  m_AnchoredPosition: {x: -4.700012, y: -12.399994}
+  m_SizeDelta: {x: 57.187744, y: 24.865479}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &880138524
 MonoBehaviour:
@@ -24452,7 +24452,7 @@ PrefabInstance:
     - target: {fileID: 6502203474498198787, guid: f5146adea1fe0b6419483916ea6e1ef3,
         type: 3}
       propertyPath: enemySpeed
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5146adea1fe0b6419483916ea6e1ef3, type: 3}
@@ -27518,7 +27518,7 @@ PrefabInstance:
     - target: {fileID: 6502203474498198787, guid: f5146adea1fe0b6419483916ea6e1ef3,
         type: 3}
       propertyPath: enemySpeed
-      value: 5
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 6502203474498198787, guid: f5146adea1fe0b6419483916ea6e1ef3,
         type: 3}
@@ -30665,7 +30665,7 @@ PrefabInstance:
     - target: {fileID: 6502203474498198787, guid: f5146adea1fe0b6419483916ea6e1ef3,
         type: 3}
       propertyPath: enemySpeed
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6502203474498198787, guid: f5146adea1fe0b6419483916ea6e1ef3,
         type: 3}
