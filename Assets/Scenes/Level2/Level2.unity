@@ -2293,7 +2293,7 @@ PrefabInstance:
     - target: {fileID: 6502203474498198787, guid: f5146adea1fe0b6419483916ea6e1ef3,
         type: 3}
       propertyPath: enemySpeed
-      value: 4.5
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5146adea1fe0b6419483916ea6e1ef3, type: 3}
@@ -10949,7 +10949,7 @@ PrefabInstance:
     - target: {fileID: 6502203474498198787, guid: f5146adea1fe0b6419483916ea6e1ef3,
         type: 3}
       propertyPath: enemySpeed
-      value: 4.5
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6502203474498198787, guid: f5146adea1fe0b6419483916ea6e1ef3,
         type: 3}
@@ -25015,9 +25015,10 @@ MonoBehaviour:
     - "Contacto con finalidad sexual con menores de dieciocho a\xF1os por medios
       electr\xF3nicos..."
     - "La persona que a trav\xE9s de un medio electr\xF3nico o telem\xE1tico proponga
-      concertar un encuentro con una persona menor de dieciocho a\xF1os...."
-    - "siempre que tal propuesta se acompa\xF1e de actos materiales encaminados al
-      acercamiento con finalidad sexual o er\xF3tica..."
+      concertar un encuentro ...."
+    - "con una persona menor de dieciocho a\xF1os...."
+    - "siempre que tal propuesta se acompa\xF1e de actos materiales...."
+    - "encaminados al acercamiento con finalidad sexual o er\xF3tica...."
     - "ser\xE1 sancionada con pena privativa de libertad de uno a tres a\xF1os."
   dialoguePanel: {fileID: 1568174071}
   displayText: {fileID: 1713765323}
