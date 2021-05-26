@@ -17776,8 +17776,8 @@ MonoBehaviour:
     - "2.- Ens\xE9\xF1ale a no compartir informaci\xF3n personal en la Red y a crearse
       contrase\xF1as fuertes..."
     - 3.- No agregar como "amigos" en las redes sociales a personas que no conozca...
-    - 4.- Guardar las pruebas cuando el acoso persista (duplicado de pantalla, mensajes
-      del chat, conversaciones de WhatsApp, SMS, emails, etc.).
+    - 4.- Guardar las pruebas cuando el acoso persista, duplicado de pantalla, mensajes
+      del chat, conversaciones de WhatsApp.
   dialoguePanel: {fileID: 75451204}
   displayText: {fileID: 1232945667}
   typingSpeen: 0.009
@@ -20032,7 +20032,7 @@ MonoBehaviour:
   dialogue:
     name: Flag2
     sentenceList:
-    - "\xBFQUI\xC9NES SON LAS PROCIPALES V\xCDCTIMAS?"
+    - "\xBFQUI\xC9NES SON LAS PRINCIPALES V\xCDCTIMAS?"
     - "Ni\xF1os, ni\xF1as y adolescentes de todas edades, clases sociales, culturas,
       religiones y regiones\r."
   dialoguePanel: {fileID: 141610017}
