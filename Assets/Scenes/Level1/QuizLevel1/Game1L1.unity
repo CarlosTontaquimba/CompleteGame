@@ -2594,7 +2594,7 @@ MonoBehaviour:
         isCorrect: 1
       - answerText: Falso
         isCorrect: 0
-    - QuestionText: 'ES EL CIBERACOSO SE PRODUCE MEDIANTE:'
+    - QuestionText: 'EL CIBERACOSO SE PRODUCE MEDIANTE:'
       answers:
       - answerText: "Tel\xE9fono"
         isCorrect: 0
@@ -2630,7 +2630,7 @@ MonoBehaviour:
         isCorrect: 1
       - answerText: Falso
         isCorrect: 0
-    - QuestionText: "\xBFEL CIBERACOSADOR GENERA CONFIANZA, ES SOCIABLE Y GENEROSO?"
+    - QuestionText: "\xBFEL CIBERACOSADOR GENERA CONFIANZA Y ES GENEROSO?"
       answers:
       - answerText: Verdadero
         isCorrect: 0
