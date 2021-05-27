@@ -1519,68 +1519,55 @@ MonoBehaviour:
     TimeLimitInSeconds: 30
     PointsAddedForCorrectAnswer: 10
     questions:
-    - QuestionText: "\xBFQU\xC9 ES EL GROOMING?"
+    - QuestionText: "\xBFEL GROOMING ES EL CONTACTO SEXUAL ONLINE?"
       answers:
-      - answerText: "Acci\xF3n antijur\xEDdica que se realiza en el entorno digital
-          o Internet"
-        isCorrect: 0
-      - answerText: Contacto sexual online
+      - answerText: Verdadero
         isCorrect: 1
-      - answerText: "Robo de informaci\xF3n, robo de contrase\xF1as, fraude a cuentas
-          bancarias"
+      - answerText: Falso
         isCorrect: 0
-      - answerText: Suplantar la identidad de un individuo
-        isCorrect: 0
-    - QuestionText: "\xBFC\xD3MO SE PRODUCE EL GROOMING?"
+    - QuestionText: "\xBFGROOMING ES CUANDO SE ALTERAN DATOS PERSONALES PARA UN FRAUDE?"
       answers:
-      - answerText: "Cuando un adulto enga\xF1a a un menor con claros fines sexuales"
+      - answerText: Verdadero
+        isCorrect: 0
+      - answerText: Falso
         isCorrect: 1
-      - answerText: Cuando se manipula datos con el fin de lograr falsos movimientos
-        isCorrect: 0
-      - answerText: Cuando se alteran documentos computarizados
-        isCorrect: 0
-      - answerText: Cuando se altera datos personales para un fraude
-        isCorrect: 0
-    - QuestionText: "\xBFQUI\xC9NES SON LAS V\xCDCTIMAS PRINCIPALES DEL GROOMING?"
+    - QuestionText: "\xBFQUI\xC9NES NO SON LAS PRINCIPALES V\xCDCTIMAS DEL GROOMING?"
       answers:
-      - answerText: Nativos digitales
+      - answerText: "Ni\xF1os"
         isCorrect: 0
-      - answerText: Personas discapacitadas
+      - answerText: Adolescentes
         isCorrect: 0
       - answerText: Adultos mayores
-        isCorrect: 0
-      - answerText: "Ni\xF1os, ni\xF1as, adolescentes"
         isCorrect: 1
-    - QuestionText: "ELIJA LA OPCI\xD3N INCORRECTA (DETECTAR UN PERFIL FALSO)"
+    - QuestionText: "\xBFC\xD3MO DETECTAR UN PERFIL FALSO?"
       answers:
-      - answerText: 'No tiene foto de perfil '
+      - answerText: No tiene foto de perfil
         isCorrect: 0
-      - answerText: "Nombres extranjeros o contienen muchos n\xFAmeros"
+      - answerText: Nombres de extranjero
         isCorrect: 0
-      - answerText: Los archivos personales desaparecen
-        isCorrect: 1
       - answerText: "Antig\xFCedad de la cuenta"
         isCorrect: 0
-    - QuestionText: "\xBFCU\xC1LES NO SON LAS PAUTAS DE PREVENCI\xD3N DEL GROOMING?"
-      answers:
-      - answerText: "Hacer click en enlaces de correos electr\xF3nicos"
+      - answerText: Todas las anteriores
         isCorrect: 1
-      - answerText: "Usar un nombre ficticio y una fotograf\xEDa de alg\xFAn personaje
-          de ficci\xF3n "
-        isCorrect: 0
-      - answerText: "No compartir informaci\xF3n personal en la Red"
-        isCorrect: 0
-      - answerText: No agregar en las redes sociales a personas desconocidas
-        isCorrect: 0
-    - QuestionText: "\xBFEN QU\xC9 ART\xCDCULO DEL COIP SE HABLA SOBRE EL GROOMING?"
+    - QuestionText: "NO COMPARTIR INFORMACI\xD3N PERSONAL EN LA RED PREVIENE EL:"
       answers:
-      - answerText: "Art\xEDculo 234"
+      - answerText: "Fraude inform\xE1tico"
         isCorrect: 0
-      - answerText: "Art\xEDculo 173"
+      - answerText: "Delito inform\xE1tico"
+        isCorrect: 0
+      - answerText: Ciberacoso
+        isCorrect: 0
+      - answerText: Grooming
         isCorrect: 1
-      - answerText: "Art\xEDculo 232"
+    - QuestionText: "EL ART\xCDCULO 173 DEL COIP HABLA SOBRE:"
+      answers:
+      - answerText: Grooming
+        isCorrect: 1
+      - answerText: "Sextorisi\xF3n"
         isCorrect: 0
-      - answerText: "Art\xEDculo 230"
+      - answerText: Ciberacoso
+        isCorrect: 0
+      - answerText: "Fraude inform\xE1tico"
         isCorrect: 0
 --- !u!4 &1180111949
 Transform:

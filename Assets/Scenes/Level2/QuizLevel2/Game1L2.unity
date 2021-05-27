@@ -1519,69 +1519,58 @@ MonoBehaviour:
     TimeLimitInSeconds: 30
     PointsAddedForCorrectAnswer: 10
     questions:
-    - QuestionText: "\xBFQU\xC9 ES EL GROOMING?"
+    - QuestionText: "\xBFCONTACTO SEXUAL ONLINE?"
       answers:
-      - answerText: "Acci\xF3n antijur\xEDdica que se realiza en el entorno digital
-          o Internet"
-        isCorrect: 0
-      - answerText: Contacto sexual online
+      - answerText: Grooming
         isCorrect: 1
-      - answerText: "Robo de informaci\xF3n, robo de contrase\xF1as, fraude a cuentas
-          bancarias"
+      - answerText: Ciberacoso
         isCorrect: 0
-      - answerText: Suplantar la identidad de un individuo
+      - answerText: "Sextorsi\xF3n"
         isCorrect: 0
-    - QuestionText: "\xBFC\xD3MO SE PRODUCE EL GROOMING?"
+      - answerText: Espionaje
+        isCorrect: 0
+    - QuestionText: "\xBFGROOMING = ADULTO ENGA\xD1A A UN MENOR CON FINES SEXUALES?"
       answers:
-      - answerText: "Cuando un adulto enga\xF1a a un menor con claros fines sexuales"
+      - answerText: Verdadero
         isCorrect: 1
-      - answerText: Cuando se manipula datos con el fin de lograr falsos movimientos
+      - answerText: Falso
         isCorrect: 0
-      - answerText: Cuando se alteran documentos computarizados
-        isCorrect: 0
-      - answerText: Cuando se altera datos personales para un fraude
-        isCorrect: 0
-    - QuestionText: "\xBFQUI\xC9NES SON LAS V\xCDCTIMAS PRINCIPALES DEL GROOMING?"
+    - QuestionText: "LOS NI\xD1OS NI\xD1AS Y ADOLESCENTES SON LAS PRINCIPALES V\xCDCTIMAS
+        DEL:"
       answers:
-      - answerText: Nativos digitales
+      - answerText: Ciberacoso
         isCorrect: 0
-      - answerText: Personas discapacitadas
+      - answerText: "Sabotaje inform\xE1tico"
         isCorrect: 0
-      - answerText: Adultos mayores
-        isCorrect: 0
-      - answerText: "Ni\xF1os, ni\xF1as, adolescentes"
+      - answerText: Grooming
         isCorrect: 1
-    - QuestionText: "ELIJA LA OPCI\xD3N INCORRECTA (DETECTAR UN PERFIL FALSO)"
-      answers:
-      - answerText: 'No tiene foto de perfil '
+      - answerText: "Sextorsi\xF3n"
         isCorrect: 0
-      - answerText: "Nombres extranjeros o contienen muchos n\xFAmeros"
+    - QuestionText: "ELIJA LA OPCI\xD3N CORRECTA (DETECTAR UN PERFIL FALSO)"
+      answers:
+      - answerText: No tiene foto de perfil
+        isCorrect: 1
+      - answerText: Robo de datos personales
         isCorrect: 0
       - answerText: Los archivos personales desaparecen
-        isCorrect: 1
-      - answerText: "Antig\xFCedad de la cuenta"
         isCorrect: 0
-    - QuestionText: "\xBFCU\xC1LES NO SON LAS PAUTAS DE PREVENCI\xD3N DEL GROOMING?"
+    - QuestionText: "ES UNA PAUTA DE PREVENCI\xD3N DEL GROOMING"
       answers:
-      - answerText: "Hacer click en enlaces de correos electr\xF3nicos"
-        isCorrect: 1
+      - answerText: "Hacer clic en enlaces de correos electr\xF3nicos"
+        isCorrect: 0
       - answerText: "Usar un nombre ficticio y una fotograf\xEDa de alg\xFAn personaje
-          de ficci\xF3n "
-        isCorrect: 0
-      - answerText: "No compartir informaci\xF3n personal en la Red"
-        isCorrect: 0
-      - answerText: No agregar en las redes sociales a personas desconocidas
-        isCorrect: 0
-    - QuestionText: "\xBFEN QU\xC9 ART\xCDCULO DEL COIP SE HABLA SOBRE EL GROOMING?"
-      answers:
-      - answerText: "Art\xEDculo 234"
-        isCorrect: 0
-      - answerText: "Art\xEDculo 173"
+          de ficci\xF3n"
         isCorrect: 1
-      - answerText: "Art\xEDculo 232"
+      - answerText: "Compartir informaci\xF3n personal en la Red"
         isCorrect: 0
-      - answerText: "Art\xEDculo 230"
+      - answerText: Agregar en las redes sociales a personas desconocidas
         isCorrect: 0
+    - QuestionText: "\xBFEL ART\xCDCULO 234 DEL COIP HABLA SOBRE EL GROOMING?"
+      answers:
+      - answerText: Verdadero
+        isCorrect: 0
+      - answerText: Falso
+        isCorrect: 1
 --- !u!4 &1180111949
 Transform:
   m_ObjectHideFlags: 0

@@ -2588,68 +2588,53 @@ MonoBehaviour:
     TimeLimitInSeconds: 30
     PointsAddedForCorrectAnswer: 10
     questions:
-    - QuestionText: "Son j\xF3venes que han pasado toda su vida acompa\xF1ados de
-        la tecnolog\xEDa."
+    - QuestionText: "NATIVOS DIGITALES = VIVEN ACOMPA\xD1ADOS DE LA TECNOLOG\xCDA"
       answers:
-      - answerText: Ingenieros en sistema
-        isCorrect: 0
-      - answerText: Nativos Digitales
+      - answerText: Verdadero
         isCorrect: 1
-      - answerText: "Acosador cibern\xE9tico"
+      - answerText: Falso
         isCorrect: 0
-      - answerText: Ingenieros de software
-        isCorrect: 0
-    - QuestionText: "\xBFQu\xE9 es el ciberacoso?"
+    - QuestionText: 'ES EL CIBERACOSO SE PRODUCE MEDIANTE:'
       answers:
-      - answerText: "Es la agresi\xF3n se da a trav\xE9s de dispositivos tecnol\xF3gicos
-          modernos."
+      - answerText: "Tel\xE9fono"
+        isCorrect: 0
+      - answerText: "Llamadas telef\xF3nicas"
+        isCorrect: 0
+      - answerText: Notas de voz
+        isCorrect: 0
+      - answerText: El mal uso de las TIC
         isCorrect: 1
-      - answerText: "Es un tipo de agresi\xF3n f\xEDsica."
-        isCorrect: 0
-      - answerText: "Agresi\xF3n que se d\xE1 a trav\xE9s de redes sociales."
-        isCorrect: 0
-      - answerText: "Es una agresi\xF3n sexual."
-        isCorrect: 0
-    - QuestionText: "\xBFCu\xE1les son las categor\xEDas del ciberacoso?"
+    - QuestionText: "\xBFQU\xC9 OPCI\xD3N NO PERTENECE A LAS CATEGOR\xCDAS DEL CIBERACOSO?"
       answers:
-      - answerText: "Cartas, Mensajes en redes sociales, Llamadas telef\xF3nicas"
+      - answerText: Mensajes de texto
         isCorrect: 0
-      - answerText: "Correos electr\xF3nicos, Encuentros presenciales."
-        isCorrect: 0
-      - answerText: "Fotos, Videos, Chats, Encuentros f\xEDsicos."
-        isCorrect: 0
-      - answerText: "Mensaje de texto, Correo electr\xF3nico, Llamada , Foto, Videoclip."
+      - answerText: Cartas manuscritas
         isCorrect: 1
-    - QuestionText: Actores, participantes en el ciberacoso
+      - answerText: Fotos, Videos
+        isCorrect: 0
+      - answerText: "Llamadas telef\xF3nicas"
+        isCorrect: 0
+    - QuestionText: ACTORES, QUE NO PARTICIPAN EN EL CIBERACOSO
       answers:
-      - answerText: "Internet, Tel\xE9fono m\xF3vil, Computador, etc."
+      - answerText: "V\xEDctima"
         isCorrect: 0
-      - answerText: Facebook, YouTube, Instagram, SnapChat
+      - answerText: Victimario
         isCorrect: 0
-      - answerText: "V\xEDctima, Victimario y Testigos."
+      - answerText: Testigos
+        isCorrect: 0
+      - answerText: Redes sociales
         isCorrect: 1
-      - answerText: "Llamadas, Mensaje de texto, Correos electr\xF3nicos, Fotos."
-        isCorrect: 0
-    - QuestionText: "\xBFCu\xE1les son los factores implicados en el ciberacoso?"
+    - QuestionText: "\xBFEL TIMEPO ES UN FACTOR IMPLICADO EN EL CIBERACOSO?"
       answers:
-      - answerText: Internet, Tiempo, Lugar, Redes sociales
-        isCorrect: 0
-      - answerText: Facebook, YouTube, Instagram, SnapChat
-        isCorrect: 0
-      - answerText: El tiempo, el lugar, las redes sciales
-        isCorrect: 0
-      - answerText: Tiempo, Lugar, Perfil del acosador y manifestaciones.
+      - answerText: Verdadero
         isCorrect: 1
-    - QuestionText: "\xBFCu\xE1l de los siguientes rasgos no portenece al perfil
-        del ciberacosador?"
+      - answerText: Falso
+        isCorrect: 0
+    - QuestionText: "\xBFEL CIBERACOSADOR GENERA CONFIANZA, ES SOCIABLE Y GENEROSO?"
       answers:
-      - answerText: Personalidad dominante
+      - answerText: Verdadero
         isCorrect: 0
-      - answerText: Se sienten frustrados con facilidad
-        isCorrect: 0
-      - answerText: Genera confianza, sociable, generoso, etc.
-        isCorrect: 1
-      - answerText: "Demuestran escasa empat\xEDa o compasi\xF3n"
+      - answerText: Falso
         isCorrect: 1
 --- !u!4 &1822234014
 Transform:

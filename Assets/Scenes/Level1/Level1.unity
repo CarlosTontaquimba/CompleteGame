@@ -286,49 +286,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &48340565
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 48340567}
-  - component: {fileID: 48340566}
-  m_Layer: 0
-  m_Name: PlayPause
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &48340566
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 48340565}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0f8cba61247d594eadf98194e935c19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &48340567
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 48340565}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.1037191, y: 0.28076172, z: -10}
-  m_LocalScale: {x: 166.66667, y: 200, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1013893331}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &53306739
 GameObject:
   m_ObjectHideFlags: 0
@@ -37666,7 +37623,6 @@ GameObject:
   - component: {fileID: 740097408}
   - component: {fileID: 740097407}
   - component: {fileID: 740097406}
-  - component: {fileID: 740097409}
   m_Layer: 0
   m_Name: CanvasGameOver
   m_TagString: Untagged
@@ -37754,18 +37710,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 2
   m_TargetDisplay: 0
---- !u!114 &740097409
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 740097404}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bb3b0edf9e56e249917098123e06909, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &742502787
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -46,7 +46,7 @@ public class GameController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Debug.Log("Puntos obtenidos: " + playerScore);
+        //Debug.Log("Puntos obtenidos: " + playerScore);
     }
     private void ShowQuestion()
     {
